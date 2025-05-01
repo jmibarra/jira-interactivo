@@ -6,13 +6,13 @@ root: content/introduccion
 parts:
   - caption: Entrando al mundo Atlassian
     chapters:
-    - file: content/primeros-pasos/primeros-pasos.md
+    - file: content/capitulo-1/data-center-vs-cloud.md
+    - file: content/capitulo-1/primeros-pasos/primeros-pasos.md
       title: "1. Primeros pasos"
       sections:
-        - file: content/primeros-pasos/sections/data-center-vs-cloud.md
-        - file: content/primeros-pasos/sections/productos-jira.md
-        - file: content/primeros-pasos/sections/licenciamiento.md
-        - file: content/primeros-pasos/sections/crear-instancia.md
+        - file: content/capitulo-1/primeros-pasos/sections/productos-jira.md
+        - file: content/capitulo-1/primeros-pasos/sections/licenciamiento.md
+        - file: content/capitulo-1/primeros-pasos/sections/crear-instancia.md
   - caption: Jira
     chapters:
     - file: content/tipos-de-proyectos.md
