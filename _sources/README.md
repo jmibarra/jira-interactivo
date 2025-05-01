@@ -50,7 +50,7 @@ Aun así, el libro incluye secciones introductorias para quienes parten desde ce
 
 ## 🐞 Reporta un Problema
 
-Si encuentras algún error o tienes una idea para mejorar el libro, abre un **Issue** en nuestro [tablero de Issues]([https://github.com/jmibarra/productivity-app-ts-project/issues](https://github.com/jmibarra/jira-interactivo/issues)). Por favor, incluye detalles claros y pasos para reproducir el problema si corresponde.
+Si encuentras algún error o tienes una idea para mejorar el libro, abre un **Issue** en nuestro [tablero de Issues](https://github.com/jmibarra/jira-interactivo/issues). Por favor, incluye detalles claros y pasos para reproducir el problema si corresponde.
 
 ---
 
