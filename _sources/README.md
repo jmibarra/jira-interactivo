@@ -56,14 +56,11 @@ Si encuentras algún error o tienes una idea para mejorar el libro, abre un **Is
 
 ## 📬 Comunícate
 
-Si tienes dudas o necesitas orientación, no dudes en contactarnos a través de los Issues o directamente a nuestro correo:  
+Si tienes dudas o necesitas orientación, no dudes en contactarnos a través de los Issues o mail:  
 ✉️ [jmibarra86@gmail.com](mailto:jmibarra86@gmail.com)
 
----
-
-## 🪪 Licencia
-
-Este proyecto está bajo la licencia [MIT](LICENSE). Siéntete libre de usar, modificar y distribuir este contenido bajo los términos especificados.
+También puedes encontrarme en LinkedIn:  
+🔗 [Juan Manuel Ibarra - LinkedIn](https://www.linkedin.com/in/juan-manuel-ibarra-activity/)
 
 ---
 
