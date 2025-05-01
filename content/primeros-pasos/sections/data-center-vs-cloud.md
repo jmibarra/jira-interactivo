@@ -1,4 +1,4 @@
-# 2.1 Atlassian Cloud vs Data Center
+# Atlassian Cloud vs Data Center
 
 Al comenzar a trabajar con los productos de Atlassian, una de las primeras decisiones estratégicas es elegir entre el despliegue en la nube (**Cloud**) o una instalación autogestionada en tus propios servidores (**Data Center**).
 
@@ -21,6 +21,8 @@ La opción **Cloud** es un servicio totalmente gestionado por Atlassian. No requ
 - Menor control sobre la infraestructura subyacente.
 - Limitaciones en personalización avanzada del backend.
 - Algunos plugins o apps del Marketplace solo están disponibles para Server/Data Center.
+- Así como es una ventaja no preocuparnos por las actualizaciones, muchas veces nos encontramos con cambios en la herramienta que no son convenientes para la organización y que no pueden ser omitidos en nuestra instancia.
+- En caso de que haya cambios en políticas de Atlassian nos afectaran directamente.
 
 ---
 
@@ -54,10 +56,14 @@ La opción **Data Center** está pensada para grandes organizaciones con requeri
 
 ---
 
-> 💡 **En resumen:** Si buscás simplicidad, velocidad de implementación y bajo mantenimiento, **Cloud** es la mejor opción. Si necesitás control absoluto, cumplimiento normativo o una arquitectura distribuida, **Data Center** es el camino.
+`````{admonition} ¿Qué opción es la adecuada para mí?
+:class: tip
+Si buscás simplicidad, velocidad de implementación y bajo mantenimiento, **Cloud** es la mejor opción. Si necesitás control absoluto, cumplimiento normativo o una arquitectura distribuida, **Data Center** es el camino.
+`````
 
 ---
 
-¿Querés que preparemos también una tabla rápida para ayudarte a elegir según tu contexto organizacional?
-
----
+`````{admonition} Importante
+:class: warning
+Este libro en particular se va a centrar en la versión Cloud de los productos Atlassian. Si bien algunas configuraciones son similares, es cada vez mayor la diferencia entre las dos versiones de la herramienta
+`````

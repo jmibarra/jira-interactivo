@@ -1,2 +1,2 @@
-# 11. Casos prácticos
+# Casos prácticos
 

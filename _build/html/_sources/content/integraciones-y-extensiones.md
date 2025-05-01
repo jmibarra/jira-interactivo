@@ -1,2 +1,2 @@
-# 9. Integraciones y extensiones
+# Integraciones y extensiones
 

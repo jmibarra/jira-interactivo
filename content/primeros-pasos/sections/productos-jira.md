@@ -1,4 +1,4 @@
-# 2.2 Productos de Jira
+# Productos de Jira
 
 El ecosistema de Atlassian ofrece soluciones potentes y flexibles para la gestión del trabajo. Dentro de este ecosistema, **Jira** es la piedra angular para la planificación, seguimiento y colaboración entre equipos.
 

@@ -1,2 +1,2 @@
-# 5. Tableros y metodologías ágiles
+# Tableros y metodologías ágiles
 

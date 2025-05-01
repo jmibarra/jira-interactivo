@@ -1,4 +1,4 @@
-# 2. Primeros pasos con Jira
+# Primeros pasos con Jira
 
 En esta sección comenzaremos a explorar el ecosistema de productos de **Jira**, parte de la suite de Atlassian. El objetivo es brindarte una base sólida para que puedas dar tus primeros pasos con confianza, entendiendo cómo se estructura la herramienta y cuáles son las decisiones clave al iniciar.
 

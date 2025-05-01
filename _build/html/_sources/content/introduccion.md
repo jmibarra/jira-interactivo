@@ -1,4 +1,4 @@
-# 1. Introducción
+# Introducción
 
 Jira es una herramienta de gestión de proyectos y seguimiento de tareas que se ha convertido en un estándar dentro del mundo del desarrollo de software y gestión de equipos ágiles. Desarrollado por Atlassian, Jira es utilizado por miles de equipos en todo el mundo para planificar, rastrear y gestionar el trabajo de manera eficiente. Este libro tiene como objetivo ofrecerte una guía completa para aprovechar al máximo Jira, desde lo básico hasta técnicas más avanzadas. A lo largo de este libro, exploraremos cómo configurar, personalizar y utilizar Jira para optimizar los flujos de trabajo y mejorar la productividad de tu equipo.
 

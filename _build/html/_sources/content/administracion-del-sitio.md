@@ -1,2 +1,2 @@
-# 8. Administración del sitio
+# Administración del sitio
 

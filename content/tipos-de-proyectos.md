@@ -1,2 +1,2 @@
-# 3. Tipos de proyectos
+# Tipos de proyectos
 
