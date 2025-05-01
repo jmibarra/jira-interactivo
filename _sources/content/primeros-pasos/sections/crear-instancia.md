@@ -1,4 +1,4 @@
-# Creá tu instancia de Jira
+# 2.4 Creá tu instancia de Jira
 
 ```{admonition} Here's your admonition
 Here's the admonition content
