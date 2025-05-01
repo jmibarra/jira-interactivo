@@ -46,6 +46,10 @@ Aun así, el libro incluye secciones introductorias para quienes parten desde ce
 
 ¡Todas las contribuciones son bienvenidas!
 
+### ¿Cómo hacer un build del libro?
+
+Ejecuta el comando ```jupyter-book clean . --all && jupyter-book build .``` para borrar el cache anterior y buildear nuevamente
+
 ---
 
 ## 🐞 Reporta un Problema

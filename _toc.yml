@@ -7,8 +7,9 @@ parts:
   - caption: Entrando al mundo Atlassian
     chapters:
     - file: content/capitulo-1/data-center-vs-cloud.md
+      title: "1. Atlassian Cloud vs Data Center"
     - file: content/capitulo-1/primeros-pasos/primeros-pasos.md
-      title: "1. Primeros pasos"
+      title: "2. Primeros pasos"
       sections:
         - file: content/capitulo-1/primeros-pasos/sections/productos-jira.md
         - file: content/capitulo-1/primeros-pasos/sections/licenciamiento.md
