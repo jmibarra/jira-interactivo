@@ -1,7 +1,7 @@
 title: "Jira from scratch"
 subtitle: "Un viaje desde el inicio por Jira"
 author: "Juan Manuel Ibarra"
-logo: images/logo-jira.png  # Opcional
+logo: images/book-logo.png  # Opcional
 execute:
   execute_notebooks: auto
 launch_buttons:
@@ -12,6 +12,6 @@ html:
   use_issues_button: true
   use_repository_button: true
 repository:
-  url: https://github.com/tu-usuario/jira-interactivo
+  url: https://github.com/jmibarra/jira-interactivo
   path_to_book: ""
   branch: main

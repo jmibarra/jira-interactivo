@@ -149,8 +149,14 @@
   
   
   
+    
+    
+      
+    
+    
+    <img src="../_static/book-logo.png" class="logo__image only-light" alt="Jira from scratch - Home"/>
+    <script>document.write(`<img src="../_static/book-logo.png" class="logo__image only-dark" alt="Jira from scratch - Home"/>`);</script>
   
-    <p class="title logo__title">Jira from scratch</p>
   
 </a></div>
         <div class="sidebar-primary-item">
@@ -239,7 +245,7 @@
       
       
       
-      <li><a href="https://github.com/tu-usuario/jira-interactivo" target="_blank"
+      <li><a href="https://github.com/jmibarra/jira-interactivo" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
    title="Source repository"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -256,7 +262,7 @@
       
       
       
-      <li><a href="https://github.com/tu-usuario/jira-interactivo/issues/new?title=Issue%20on%20page%20%2Fcontent/introduccion.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/jmibarra/jira-interactivo/issues/new?title=Issue%20on%20page%20%2Fcontent/introduccion.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -357,7 +363,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -373,6 +381,16 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-quien-va-dirigido-este-libro">¿A quién va dirigido este libro?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conocimientos-previos-necesarios">Conocimientos previos necesarios</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#subdocumentos">Subdocumentos</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -384,6 +402,38 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="introduccion">
 <h1>1. Introducción<a class="headerlink" href="#introduccion" title="Link to this heading">#</a></h1>
+<p>Jira es una herramienta de gestión de proyectos y seguimiento de tareas que se ha convertido en un estándar dentro del mundo del desarrollo de software y gestión de equipos ágiles. Desarrollado por Atlassian, Jira es utilizado por miles de equipos en todo el mundo para planificar, rastrear y gestionar el trabajo de manera eficiente. Este libro tiene como objetivo ofrecerte una guía completa para aprovechar al máximo Jira, desde lo básico hasta técnicas más avanzadas. A lo largo de este libro, exploraremos cómo configurar, personalizar y utilizar Jira para optimizar los flujos de trabajo y mejorar la productividad de tu equipo.</p>
+<section id="a-quien-va-dirigido-este-libro">
+<h2>¿A quién va dirigido este libro?<a class="headerlink" href="#a-quien-va-dirigido-este-libro" title="Link to this heading">#</a></h2>
+<p>Este libro está dirigido principalmente a:</p>
+<ul class="simple">
+<li><p><strong>Profesionales de software</strong>: Tanto desarrolladores como ingenieros de calidad (QA) que deseen optimizar sus flujos de trabajo con herramientas ágiles.</p></li>
+<li><p><strong>Gestores de proyectos</strong>: Aquellos que buscan implementar y gestionar procesos de trabajo eficientes utilizando Jira, desde la planificación hasta la entrega.</p></li>
+<li><p><strong>Equipos ágiles</strong>: Miembros de equipos Scrum o Kanban que buscan una mejor integración y uso de Jira en sus prácticas diarias.</p></li>
+<li><p><strong>Usuarios nuevos o intermedios</strong>: Personas que tienen poca o ninguna experiencia con Jira y buscan aprender su uso, así como aquellos que desean profundizar en su funcionalidad avanzada.</p></li>
+</ul>
+<p>Este libro es adecuado tanto para quienes recién se inician en el mundo de Jira como para aquellos que ya tienen experiencia pero desean aprovechar al máximo las capacidades que la plataforma ofrece.</p>
+</section>
+<section id="conocimientos-previos-necesarios">
+<h2>Conocimientos previos necesarios<a class="headerlink" href="#conocimientos-previos-necesarios" title="Link to this heading">#</a></h2>
+<p>Para aprovechar al máximo este libro y las herramientas que trata, se recomienda tener algunos conocimientos previos, aunque no son estrictamente imprescindibles. Estos incluyen:</p>
+<ol class="arabic simple">
+<li><p><strong>Conceptos básicos de gestión de proyectos</strong>: Familiaridad con los principios básicos de la gestión de proyectos, como las metodologías ágiles (Scrum, Kanban) y cómo se gestionan las tareas dentro de un proyecto.</p></li>
+<li><p><strong>Conocimientos básicos de software y tecnología</strong>: Entender conceptos fundamentales sobre el desarrollo de software, control de versiones y trabajo colaborativo en equipos técnicos.</p></li>
+<li><p><strong>Interfaz básica de computadoras</strong>: Familiaridad general con el uso de aplicaciones de software, sistemas operativos y navegación por interfaces gráficas.</p></li>
+</ol>
+<p>Si bien no es obligatorio tener experiencia previa con Jira, contar con estos conocimientos ayudará a que la experiencia de aprendizaje sea más fluida y efectiva.</p>
+</section>
+<hr class="docutils" />
+<section id="subdocumentos">
+<h2>Subdocumentos<a class="headerlink" href="#subdocumentos" title="Link to this heading">#</a></h2>
+<p>Si deseas profundizar en algún tema específico, puedes revisar los siguientes subdocumentos:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#gesti%C3%B3n-de-proyectos.md"><span class="xref myst">Gestión de Proyectos Ágiles</span></a></p></li>
+<li><p><a class="reference internal" href="#scrum-kanban.md"><span class="xref myst">Introducción a Scrum y Kanban</span></a></p></li>
+<li><p><a class="reference internal" href="#desarrollo-de-software.md"><span class="xref myst">Fundamentos de Desarrollo de Software</span></a></p></li>
+</ul>
+</section>
 <div class="toctree-wrapper compound">
 </div>
 </section>
@@ -392,7 +442,7 @@ document.write(`
     {
         requestKernel: true,
         binderOptions: {
-            repo: "tu-usuario/jira-interactivo",
+            repo: "jmibarra/jira-interactivo",
             ref: "main",
         },
         codeMirrorConfig: {
@@ -433,6 +483,23 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-quien-va-dirigido-este-libro">¿A quién va dirigido este libro?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conocimientos-previos-necesarios">Conocimientos previos necesarios</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#subdocumentos">Subdocumentos</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
