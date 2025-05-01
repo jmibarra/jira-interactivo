@@ -1,1 +1,1 @@
-# 2.3 Tipos de licenciamiento
+# Tipos de licenciamiento

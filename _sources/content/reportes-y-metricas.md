@@ -1,2 +1,2 @@
-# 7. Reportes y métricas
+# Reportes y métricas
 
