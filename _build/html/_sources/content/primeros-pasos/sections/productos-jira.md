@@ -72,5 +72,3 @@ En muchos entornos, ambos conviven integrados. Por ejemplo, un equipo de desarro
 :class: tip
  Podés activar ambos productos en una misma instancia y administrar sus permisos y esquemas de trabajo por separado.
 `````
-
----
