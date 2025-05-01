@@ -1,6 +1,6 @@
 # 📘 Jira Interactivo – Guía práctica para dominar Jira
 
-Bienvenido al repositorio de **Jira Interactivo**, un libro en formato digital que explora de forma práctica y aplicada el uso de [**Jira**](https://www.atlassian.com/software/jira), la plataforma de gestión de proyectos más utilizada por equipos ágiles y empresas tecnológicas.
+Bienvenido al repositorio de **Jira from scratch**, un libro en formato digital que explora de forma práctica y aplicada el uso de [**Jira**](https://www.atlassian.com/software/jira), la plataforma de gestión de proyectos más utilizada por equipos ágiles y empresas tecnológicas.
 
 Este proyecto tiene como objetivo construir un **libro interactivo, didáctico y actualizado**, pensado para ayudar a:
 

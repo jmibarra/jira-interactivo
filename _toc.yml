@@ -4,11 +4,12 @@
 format: jb-book
 root: content/introduccion
 chapters:
-  - file: content/primeros-pasos.md
+  - file: content/primeros-pasos/primeros-pasos.md
     sections:
-      - file: content/primeros-pasos/crear-instancia.md
-      - file: content/primeros-pasos/productos-jira.md
-      - file: content/primeros-pasos/licenciamiento.md
+      - file: content/primeros-pasos/sections/data-center-vs-cloud.md
+      - file: content/primeros-pasos/sections/productos-jira.md
+      - file: content/primeros-pasos/sections/licenciamiento.md
+      - file: content/primeros-pasos/sections/crear-instancia.md
   - file: content/tipos-de-proyectos.md
   - file: content/issues-y-workflows.md
   - file: content/tableros-y-agiles.md
