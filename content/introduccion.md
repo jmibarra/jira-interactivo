@@ -26,11 +26,3 @@ Para aprovechar al máximo este libro y las herramientas que trata, se recomiend
 Si bien no es obligatorio tener experiencia previa con Jira, contar con estos conocimientos ayudará a que la experiencia de aprendizaje sea más fluida y efectiva.
 
 ---
-
-## Subdocumentos
-
-Si deseas profundizar en algún tema específico, puedes revisar los siguientes subdocumentos:
-
-- [Gestión de Proyectos Ágiles](gestión-de-proyectos.md)
-- [Introducción a Scrum y Kanban](scrum-kanban.md)
-- [Fundamentos de Desarrollo de Software](desarrollo-de-software.md)

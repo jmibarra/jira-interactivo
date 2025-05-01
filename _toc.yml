@@ -5,6 +5,10 @@ format: jb-book
 root: content/introduccion
 chapters:
   - file: content/primeros-pasos.md
+    sections:
+      - file: content/primeros-pasos/crear-instancia.md
+      - file: content/primeros-pasos/productos-jira.md
+      - file: content/primeros-pasos/licenciamiento.md
   - file: content/tipos-de-proyectos.md
   - file: content/issues-y-workflows.md
   - file: content/tableros-y-agiles.md
@@ -14,4 +18,5 @@ chapters:
   - file: content/integraciones-y-extensiones.md
   - file: content/api-jira.ipynb
   - file: content/casos-practicos.md
+  - file: README.md
 
