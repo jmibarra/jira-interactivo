@@ -3,30 +3,23 @@
 
 format: jb-book
 root: content/introduccion
-parts:
-- caption: Iniciando el viaje en Jira
+options:  # The options key will be applied to all chapters, but not sub-sections
   numbered: True
-  chapters:
-    - file: content/primeros-pasos/primeros-pasos.md
-      sections:
-        - file: content/primeros-pasos/sections/data-center-vs-cloud.md
-        - file: content/primeros-pasos/sections/productos-jira.md
-        - file: content/primeros-pasos/sections/licenciamiento.md
-        - file: content/primeros-pasos/sections/crear-instancia.md
-    - file: content/tipos-de-proyectos.md
-    - file: content/issues-y-workflows.md
-    - file: content/tableros-y-agiles.md
-- caption: Jira Service Management
-  numbered: True
-  chapters:
-    - file: content/automatizaciones.md
-    - file: content/reportes-y-metricas.md
-    - file: content/administracion-del-sitio.md
-    - file: content/integraciones-y-extensiones.md
-    - file: content/casos-practicos.md
-- caption: Llegando al final
-  numbered: True
-  chapters:
-    - file: README.md
-      title: Acerca de este libro
+chapters:
+  - file: content/primeros-pasos/primeros-pasos.md
+    sections:
+      - file: content/primeros-pasos/sections/data-center-vs-cloud.md
+      - file: content/primeros-pasos/sections/productos-jira.md
+      - file: content/primeros-pasos/sections/licenciamiento.md
+      - file: content/primeros-pasos/sections/crear-instancia.md
+  - file: content/tipos-de-proyectos.md
+  - file: content/issues-y-workflows.md
+  - file: content/tableros-y-agiles.md
+  - file: content/automatizaciones.md
+  - file: content/reportes-y-metricas.md
+  - file: content/administracion-del-sitio.md
+  - file: content/integraciones-y-extensiones.md
+  - file: content/casos-practicos.md
+  - file: README.md
+    title: "Acerca de este libro"
 
