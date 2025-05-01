@@ -2,8 +2,16 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: intro
+root: content/introduccion
 chapters:
-- file: markdown
-- file: notebooks
-- file: markdown-notebooks
+  - file: content/primeros-pasos.md
+  - file: content/tipos-de-proyectos.md
+  - file: content/issues-y-workflows.md
+  - file: content/tableros-y-agiles.md
+  - file: content/automatizaciones.md
+  - file: content/reportes-y-metricas.md
+  - file: content/administracion-del-sitio.md
+  - file: content/integraciones-y-extensiones.md
+  - file: content/api-jira.ipynb
+  - file: content/casos-practicos.md
+
