@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Reportes y métricas &#8212; Jira from scratch</title>
+    <title>📚 Cómo usar este libro &#8212; Jira from scratch</title>
   
   
   
@@ -58,12 +58,12 @@
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'content/reportes-y-metricas';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/como-usar-este-libro';</script>
     <link rel="icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Administración del sitio" href="administracion-del-sitio.html" />
-    <link rel="prev" title="Automatizaciones" href="automatizaciones.html" />
+    <link rel="next" title="📘 Jira Interactivo – Guía práctica para dominar Jira" href="../README.html" />
+    <link rel="prev" title="Casos prácticos" href="casos-practicos.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -192,12 +192,12 @@
 <li class="toctree-l1"><a class="reference internal" href="capitulo-1/crear-instancia.html">5. Crear una instancia</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Jira</span></p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="tipos-de-proyectos.html">Tipos de proyectos</a></li>
 <li class="toctree-l1"><a class="reference internal" href="issues-y-workflows.html">Issues y workflows</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tableros-y-agiles.html">Tableros y metodologías ágiles</a></li>
 <li class="toctree-l1"><a class="reference internal" href="automatizaciones.html">Automatizaciones</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Reportes y métricas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reportes-y-metricas.html">Reportes y métricas</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Jira Service Management</span></p>
 <ul class="nav bd-sidenav">
@@ -206,8 +206,8 @@
 <li class="toctree-l1"><a class="reference internal" href="casos-practicos.html">Casos prácticos</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Anexos</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="como-usar-este-libro.html">Cómo usar este libro</a></li>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Cómo usar este libro</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../README.html">Acerca de este libro</a></li>
 </ul>
 
@@ -280,7 +280,7 @@
       
       
       
-      <li><a href="https://github.com/jmibarra/jira-interactivo/issues/new?title=Issue%20on%20page%20%2Fcontent/reportes-y-metricas.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/jmibarra/jira-interactivo/issues/new?title=Issue%20on%20page%20%2Fcontent/como-usar-este-libro.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -310,7 +310,7 @@
       
       
       
-      <li><a href="../_sources/content/reportes-y-metricas.md" target="_blank"
+      <li><a href="../_sources/content/como-usar-este-libro.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -381,7 +381,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -392,11 +394,26 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Reportes y métricas</h1>
+    <h1>📚 Cómo usar este libro</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#estructura-del-libro">🧭 Estructura del libro</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#etiquetas-visuales-badges">🏷️ Etiquetas visuales (badges)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#por-producto">🔹 Por producto</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#por-tipo-de-contenido">🔸 Por tipo de contenido</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sugerencias-para-sacarle-el-maximo-provecho">💡 Sugerencias para sacarle el máximo provecho</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#te-falta-algo">🛠️ ¿Te falta algo?</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -406,8 +423,55 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="reportes-y-metricas">
-<h1>Reportes y métricas<a class="headerlink" href="#reportes-y-metricas" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="como-usar-este-libro">
+<h1>📚 Cómo usar este libro<a class="headerlink" href="#como-usar-este-libro" title="Link to this heading">#</a></h1>
+<p>Este libro interactivo está diseñado para acompañarte paso a paso en el aprendizaje y dominio de los productos de Jira de Atlassian. No importa si estás dando tus primeros pasos o si ya tenés experiencia: el contenido está organizado para que puedas avanzar progresivamente o consultar temas específicos según tus necesidades.</p>
+<section id="estructura-del-libro">
+<h2>🧭 Estructura del libro<a class="headerlink" href="#estructura-del-libro" title="Link to this heading">#</a></h2>
+<p>El contenido está dividido en capítulos temáticos que cubren desde la introducción a Jira, la configuración inicial, los tipos de proyectos, hasta automatizaciones, métricas, integraciones y uso de la API. También encontrarás casos prácticos que muestran cómo aplicar lo aprendido en situaciones reales.</p>
+<p>Cada sección puede leerse de forma independiente, aunque recomendamos seguir el orden propuesto si estás comenzando desde cero.</p>
+</section>
+<hr class="docutils" />
+<section id="etiquetas-visuales-badges">
+<h2>🏷️ Etiquetas visuales (badges)<a class="headerlink" href="#etiquetas-visuales-badges" title="Link to this heading">#</a></h2>
+<p>Para ayudarte a identificar rápidamente el contenido, hemos incorporado etiquetas de colores (<em>badges</em>) al inicio de muchos artículos. Estas etiquetas indican el tipo de contenido y el producto al que aplica:</p>
+<section id="por-producto">
+<h3>🔹 Por producto<a class="headerlink" href="#por-producto" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><span class="badge badge-jira">Jira Software</span>: Contenido específico para equipos de desarrollo, gestión ágil y seguimiento de proyectos técnicos.</p></li>
+<li><p><span class="badge badge-jsm">Jira Service Management</span>: Enfocado en gestión de servicios, soporte técnico, atención al cliente y operaciones IT.</p></li>
+<li><p><span class="badge badge-cloud">Cloud</span> / <span class="badge badge-dc">Data Center</span>: Diferencias y consideraciones según el entorno de despliegue.</p></li>
+</ul>
+</section>
+<section id="por-tipo-de-contenido">
+<h3>🔸 Por tipo de contenido<a class="headerlink" href="#por-tipo-de-contenido" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><span class="badge badge-tip">Tip</span>: Sugerencias útiles y prácticas recomendadas.</p></li>
+<li><p><span class="badge badge-beta">Beta</span>: Funcionalidades nuevas o experimentales que podrían cambiar.</p></li>
+<li><p><span class="badge badge-avanzado">Avanzado</span>: Contenido técnico que requiere conocimientos previos.</p></li>
+<li><p><span class="badge badge-importante">Importante</span>: Recomendaciones clave o advertencias críticas.</p></li>
+</ul>
+</section>
+</section>
+<hr class="docutils" />
+<section id="sugerencias-para-sacarle-el-maximo-provecho">
+<h2>💡 Sugerencias para sacarle el máximo provecho<a class="headerlink" href="#sugerencias-para-sacarle-el-maximo-provecho" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Avanzá de forma progresiva</strong> si estás comenzando. El libro está diseñado para acompañarte desde lo más básico hasta niveles más avanzados.</p></li>
+<li><p><strong>Volvé a consultar capítulos</strong> cuando estés aplicando Jira en tu equipo. Algunos temas técnicos pueden tener más sentido una vez que estés en contexto real.</p></li>
+<li><p><strong>Explorá los casos prácticos</strong> para ver cómo se aplican las herramientas en situaciones del mundo real.</p></li>
+<li><p><strong>No dudes en experimentar</strong> con una cuenta gratuita de Jira mientras lees. La práctica es clave.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="te-falta-algo">
+<h2>🛠️ ¿Te falta algo?<a class="headerlink" href="#te-falta-algo" title="Link to this heading">#</a></h2>
+<p>Si encontrás que falta información, hay algo confuso o tenés una idea para mejorar este libro, ¡nos encantaría que lo compartas!</p>
+<p><a class="reference external" href="https://github.com/jmibarra/jira-interactivo/issues">Abre un issue en el repositorio del libro</a> o escribinos a <a class="reference external" href="mailto:jmibarra86&#37;&#52;&#48;gmail&#46;com">jmibarra86<span>&#64;</span>gmail<span>&#46;</span>com</a>.</p>
+<hr class="docutils" />
+<p><strong>¡Gracias por formar parte de este aprendizaje!</strong><br />
+Tu curiosidad y compromiso hacen posible que herramientas como esta tengan impacto real en los equipos de trabajo. 🙌</p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -441,20 +505,20 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="automatizaciones.html"
+       href="casos-practicos.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Automatizaciones</p>
+        <p class="prev-next-title">Casos prácticos</p>
       </div>
     </a>
     <a class="right-next"
-       href="administracion-del-sitio.html"
+       href="../README.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Administración del sitio</p>
+        <p class="prev-next-title">📘 Jira Interactivo – Guía práctica para dominar Jira</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -464,6 +528,28 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#estructura-del-libro">🧭 Estructura del libro</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#etiquetas-visuales-badges">🏷️ Etiquetas visuales (badges)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#por-producto">🔹 Por producto</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#por-tipo-de-contenido">🔸 Por tipo de contenido</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sugerencias-para-sacarle-el-maximo-provecho">💡 Sugerencias para sacarle el máximo provecho</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#te-falta-algo">🛠️ ¿Te falta algo?</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

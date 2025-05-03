@@ -30,8 +30,10 @@ parts:
     - file: content/administracion-del-sitio.md
     - file: content/integraciones-y-extensiones.md
     - file: content/casos-practicos.md
-  - caption: Cierre
+  - caption: Anexos
     chapters:
+    - file: content/como-usar-este-libro.md
+      title: "Cómo usar este libro"
     - file: README.md
       title: "Acerca de este libro"
 

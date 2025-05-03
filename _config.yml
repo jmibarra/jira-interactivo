@@ -11,6 +11,8 @@ html:
   favicon: images/favicon.ico  # Opcional
   use_issues_button: true
   use_repository_button: true
+  extra_css:
+    - _static/custom.css
 repository:
   url: https://github.com/jmibarra/jira-interactivo
   path_to_book: ""

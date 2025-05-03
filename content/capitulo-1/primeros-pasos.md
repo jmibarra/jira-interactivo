@@ -8,6 +8,7 @@ Abordaremos los siguientes temas fundamentales:
 - Un repaso general por los distintos productos de Jira: *Jira * y *Jira Service Management*.
 - Diferencias clave entre los productos, y cuándo conviene usar uno u otro.
 - Los esquemas de licenciamiento disponibles: gratuito, estándar, premium y enterprise.
+- ¿Qué es una organización? y como se estructuran las herramientas de la suite de Atlassian.
 - Cómo crear tu primera instancia de Jira en Atlassian Cloud.
 - Consideraciones iniciales para configurar un entorno de trabajo funcional y seguro.
 
