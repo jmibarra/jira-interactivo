@@ -1,7 +1,7 @@
 title: "Jira from scratch"
 subtitle: "Un viaje desde el inicio por Jira"
 author: "Juan Manuel Ibarra"
-logo: images/book-logo2.png  # Opcional
+logo: images/book-logo5.png  # Opcional
 execute:
   execute_notebooks: auto
 launch_buttons:

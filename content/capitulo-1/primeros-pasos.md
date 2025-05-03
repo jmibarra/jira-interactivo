@@ -4,10 +4,11 @@ En esta sección comenzaremos a explorar el ecosistema de productos de **Jira**,
 
 Abordaremos los siguientes temas fundamentales:
 
-- Cómo crear tu primera instancia de Jira en Atlassian Cloud.
-- Un repaso general por los distintos productos de Jira: *Jira Software*, *Jira Service Management* y *Jira Work Management*.
+- Cual es la diferencia entre Jira cloud y Jira Data Center.
+- Un repaso general por los distintos productos de Jira: *Jira * y *Jira Service Management*.
 - Diferencias clave entre los productos, y cuándo conviene usar uno u otro.
 - Los esquemas de licenciamiento disponibles: gratuito, estándar, premium y enterprise.
+- Cómo crear tu primera instancia de Jira en Atlassian Cloud.
 - Consideraciones iniciales para configurar un entorno de trabajo funcional y seguro.
 
 > 🎯 **¿Por qué es importante esta sección?**  
