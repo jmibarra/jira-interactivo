@@ -18,7 +18,6 @@ Para ayudarte a identificar rápidamente el contenido, hemos incorporado etiquet
 
 - <span class="badge badge-jira">Jira Software</span>: Contenido específico para equipos de desarrollo, gestión ágil y seguimiento de proyectos técnicos.
 - <span class="badge badge-jsm">Jira Service Management</span>: Enfocado en gestión de servicios, soporte técnico, atención al cliente y operaciones IT.
-- <span class="badge badge-cloud">Cloud</span> / <span class="badge badge-dc">Data Center</span>: Diferencias y consideraciones según el entorno de despliegue.
 
 ### 🔸 Por tipo de contenido
 

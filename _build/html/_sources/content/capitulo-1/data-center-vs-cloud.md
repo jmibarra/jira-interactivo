@@ -1,5 +1,7 @@
 # Atlassian Cloud vs Data Center
 
+<span class="badge badge-jira">Jira</span><span class="badge badge-jsm">Jira Service Management</span>
+
 Al comenzar a trabajar con los productos de Atlassian, una de las primeras decisiones estratégicas es elegir entre el despliegue en la nube (**Cloud**) o una instalación autogestionada en tus propios servidores (**Data Center**).
 
 Cada enfoque tiene ventajas y limitaciones según las necesidades de tu organización.
