@@ -13,6 +13,7 @@
 /* Tipos de producto */
 .badge-jira { background-color: #0052CC; }
 .badge-jsm { background-color: #2684FF; }
+.badge-organization { background-color: #141c26; }
 
 /* Tipos de contenido */
 .badge-tip {
