@@ -10,12 +10,13 @@ parts:
       title: "Primeros pasos"
     - file: content/capitulo-1/data-center-vs-cloud.md
       title: "1. Atlassian Cloud vs Data Center"
+    - file: content/capitulo-1/organizations-introduccion.md
+      title: "2. ¿Qué es una organización?"
     - file: content/capitulo-1/productos-jira.md
-      title: "2. Productos Jira"
+      title: "3. Jira"
     - file: content/capitulo-1/licenciamiento.md
       title: "3. Esquemas de licenciamiento"
-    - file: content/capitulo-1/organizations-introduccion.md
-      title: "4. ¿Qué es una organización?"
+
     - file: content/capitulo-1/crear-instancia.md
       title: "5. Crear una instancia"
   - caption: Jira
