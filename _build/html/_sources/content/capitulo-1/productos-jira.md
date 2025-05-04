@@ -1,10 +1,10 @@
-# Productos de Jira
+# Apps de Jira
 
 <span class="badge badge-jira">Jira</span><span class="badge badge-jsm">Jira Service Management</span>
 
 El ecosistema de Atlassian ofrece soluciones potentes y flexibles para la gestión del trabajo. Dentro de este ecosistema, **Jira** es la piedra angular para la planificación, seguimiento y colaboración entre equipos.
 
-Actualmente, Atlassian ofrece dos productos principales basados en la plataforma Jira:
+Actualmente, Atlassian ofrece dos apps principales basadas en la plataforma Jira:
 
 ---
 
@@ -12,7 +12,7 @@ Actualmente, Atlassian ofrece dos productos principales basados en la plataforma
 
 **Jira**, antes conocido como **Jira Software** es la solución más reconocida y utilizada dentro del mundo ágil. Está diseñada para equipos técnicos y de desarrollo que requieren herramientas de planificación y seguimiento de tareas, especialmente bajo metodologías ágiles como Scrum o Kanban.
 
-Este producto es ideal para:
+Esta app es ideal para:
 
 - Equipos de desarrollo de software  
 - Equipos ágiles (Scrum, Kanban, XP, etc.)  
@@ -24,7 +24,7 @@ Este producto es ideal para:
 ### Jira para equipos de desarrollo de software
 
 ```{admonition} Cambios en productos Atlassian
-El primero de mayo de 2024 se anunció que **Jira Software** y **Jira Work management** se unirían en un nuevo único producto llamado **Jira** que combinaría las propiedades de ambos productos para sacar su máximo potencial
+El primero de mayo de 2024 se anunció que **Jira Software** y **Jira Work management** se unirían en una nueva única app llamada **Jira** que combinaría las propiedades de ambas apps para sacar su máximo potencial
 
 [Welcome to the next era of Jira](https://www.atlassian.com/blog/announcements/the-next-era-of-jira)
 ```
@@ -36,8 +36,6 @@ A su vez la plataforma se integra con distintas plataformas para la conformació
 Las herramientas integradas de notificación de funciones permiten a los equipos implementar nuevas funciones de forma gradual y segura. 
 
 Todo esto descontando la muy buena integración que tiene con otras herramientas de la suite de Atlassian como Bitbucket, Jira Service Management o Confluence.
-
-
 
 ---
 
@@ -59,18 +57,18 @@ JSM permite configurar portales de autoservicio, acuerdos de nivel de servicio (
 
 ## 🧠 ¿Cuál elegir?
 
-Ambos productos comparten la base de Jira, pero están optimizados para distintos casos de uso:
+Ambas apps comparten la base de Jira, pero están optimizadas para distintos casos de uso:
 
-| Producto                | Orientado a...                     | Ejemplos comunes                          |
+| App                | Orientado a...                     | Ejemplos comunes                          |
 |------------------------|-------------------------------------|-------------------------------------------|
 | **Jira Software**       | Desarrollo, proyectos ágiles        | Scrum Teams, DevOps, Product Owners       |
 | **Jira Service Management** | Soporte, atención, servicios internos | Help Desks, Recursos Humanos, IT Ops      |
 
-En muchos entornos, ambos conviven integrados. Por ejemplo, un equipo de desarrollo puede trabajar en Jira Software, mientras que el área de soporte técnico opera en JSM, y ambos comparten issues, tableros o métricas en común.
+En muchos entornos, ambas conviven integrados. Por ejemplo, un equipo de desarrollo puede trabajar en Jira, mientras que el área de soporte técnico opera en JSM, y ambos comparten issues, tableros o métricas en común.
 
 ---
 
 `````{admonition} *Dato útil:*
 :class: tip
- Podés activar ambos productos en una misma instancia y administrar sus permisos y esquemas de trabajo por separado.
+ Podés activar ambas apps en una misma instancia y administrar sus permisos y esquemas de trabajo por separado.
 `````

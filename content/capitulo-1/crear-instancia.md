@@ -1,5 +1,6 @@
 # Crear tu primera instancia
 
+<span class="badge badge-organization">Organization</span>
 <span class="badge badge-jira">Jira Software</span>
 <span class="badge badge-jsm">Jira Service Management</span>
 

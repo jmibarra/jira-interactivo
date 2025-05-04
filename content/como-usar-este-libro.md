@@ -18,6 +18,7 @@ Para ayudarte a identificar rápidamente el contenido, hemos incorporado etiquet
 
 - <span class="badge badge-jira">Jira Software</span>: Contenido específico para equipos de desarrollo, gestión ágil y seguimiento de proyectos técnicos.
 - <span class="badge badge-jsm">Jira Service Management</span>: Enfocado en gestión de servicios, soporte técnico, atención al cliente y operaciones IT.
+- <span class="badge badge-organization">Organization</span>: Configuraciones y temas relacionados al nivel de Organización de Atlassian, estas configuraciones suelen estar a un nivel superior y afectar a los sitios contenidos.
 
 ### 🔸 Por tipo de contenido
 

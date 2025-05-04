@@ -15,10 +15,13 @@ parts:
     - file: content/capitulo-1/productos-jira.md
       title: "3. Jira"
     - file: content/capitulo-1/licenciamiento.md
-      title: "3. Esquemas de licenciamiento"
-
+      title: "4. Esquemas de licenciamiento"
+    - file: content/capitulo-1/administrators.md
+      title: "5. Administradores"
     - file: content/capitulo-1/crear-instancia.md
-      title: "5. Crear una instancia"
+      title: "6. Crear una instancia"
+    - file: content/capitulo-1/atlassian-community.md
+      title: "7. Comunidad Atlassian"
   - caption: Jira
     chapters:
     - file: content/tipos-de-proyectos.md
