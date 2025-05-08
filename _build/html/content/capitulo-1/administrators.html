@@ -382,7 +382,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -398,6 +400,20 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#organization-administrator">🏢 Organization Administrator</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#site-administrator">🌐 Site Administrator</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#product-administrator-jira-admin">🛠️ Product Administrator (Jira Admin)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project-administrator">📁 Project Administrator</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#user-administrator">👤 User Administrator</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resumen-comparativo">🧠 Resumen comparativo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#notas-adicionales">📝 Notas adicionales</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -410,6 +426,201 @@ document.write(`
   <section class="tex2jax_ignore mathjax_ignore" id="administradores">
 <h1>Administradores<a class="headerlink" href="#administradores" title="Link to this heading">#</a></h1>
 <p><span class="badge badge-organization">Organization</span></p>
+<p>Jira Cloud tiene distintos niveles de administración, cada uno con permisos y alcances específicos. Esta jerarquía permite distribuir la gestión del sistema de forma segura y eficiente, desde la gobernanza global hasta la administración de proyectos puntuales.</p>
+<p>A continuación, te presentamos los roles administrativos más comunes dentro del ecosistema de Atlassian Cloud.</p>
+<hr class="docutils" />
+<section id="organization-administrator">
+<h2>🏢 Organization Administrator<a class="headerlink" href="#organization-administrator" title="Link to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Características</p></th>
+<th class="head"><p>Detalles</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Nivel</strong></p></td>
+<td><p>Máximo (global, sobre toda la organización)</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Acceso</strong></p></td>
+<td><p><a class="reference external" href="http://admin.atlassian.com">admin.atlassian.com</a></p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Responsabilidades</strong></p></td>
+<td><p>- Gestión de usuarios a nivel de toda la organización<br>- Verificación de dominios<br>- Configuración de políticas globales (SSO, 2FA)<br>- Administración de facturación<br>- Integración con Atlassian Access</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Permisos</strong></p></td>
+<td><p>Totales sobre todos los sitios, productos y usuarios registrados bajo la organización.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Requiere Atlassian Access</strong></p></td>
+<td><p>Para algunas funciones avanzadas, sí.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<hr class="docutils" />
+<section id="site-administrator">
+<h2>🌐 Site Administrator<a class="headerlink" href="#site-administrator" title="Link to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Características</p></th>
+<th class="head"><p>Detalles</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Nivel</strong></p></td>
+<td><p>Administrador de sitio (por ejemplo: <code class="docutils literal notranslate"><span class="pre">miempresa.atlassian.net</span></code>)</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Acceso</strong></p></td>
+<td><p><a class="reference external" href="http://admin.atlassian.com">admin.atlassian.com</a> (nivel sitio)</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Responsabilidades</strong></p></td>
+<td><p>- Invitar usuarios al sitio<br>- Asignar productos (Jira, Confluence, etc.)<br>- Gestionar grupos y roles<br>- Configurar apps del sitio</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Permisos</strong></p></td>
+<td><p>Control total sobre los usuarios y productos <strong>de ese sitio</strong> únicamente. No puede ver configuraciones de otras instancias/sitios.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<hr class="docutils" />
+<section id="product-administrator-jira-admin">
+<h2>🛠️ Product Administrator (Jira Admin)<a class="headerlink" href="#product-administrator-jira-admin" title="Link to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Características</p></th>
+<th class="head"><p>Detalles</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Nivel</strong></p></td>
+<td><p>Producto (Jira Software, JSM, Confluence, etc.)</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Acceso</strong></p></td>
+<td><p>A través del propio producto (<code class="docutils literal notranslate"><span class="pre">Configuración</span> <span class="pre">del</span> <span class="pre">sistema</span></code>)</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Responsabilidades</strong></p></td>
+<td><p>- Crear y administrar proyectos<br>- Configurar esquemas (workflows, permisos, pantallas, etc.)<br>- Instalar y configurar apps específicas del producto</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Permisos</strong></p></td>
+<td><p>Control total sobre la configuración funcional del producto, pero <strong>no sobre los usuarios del sitio</strong> (a menos que también sea Site Admin).</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<hr class="docutils" />
+<section id="project-administrator">
+<h2>📁 Project Administrator<a class="headerlink" href="#project-administrator" title="Link to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Características</p></th>
+<th class="head"><p>Detalles</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Nivel</strong></p></td>
+<td><p>Proyecto</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Acceso</strong></p></td>
+<td><p>Dentro del proyecto (si tiene permisos de admin)</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Responsabilidades</strong></p></td>
+<td><p>- Administrar componentes, versiones, tableros y automatizaciones<br>- Gestionar roles dentro del proyecto<br>- Configurar permisos (si usa esquema delegable)</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Permisos</strong></p></td>
+<td><p>Limitados al ámbito del proyecto. No puede alterar la configuración global del producto.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<hr class="docutils" />
+<section id="user-administrator">
+<h2>👤 User Administrator<a class="headerlink" href="#user-administrator" title="Link to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Características</p></th>
+<th class="head"><p>Detalles</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Nivel</strong></p></td>
+<td><p>Gestión de usuarios</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Acceso</strong></p></td>
+<td><p>Desde <a class="reference external" href="http://admin.atlassian.com">admin.atlassian.com</a></p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Responsabilidades</strong></p></td>
+<td><p>- Invitar y eliminar usuarios<br>- Asignar y revocar accesos a productos<br>- Ver grupos y dominios verificados</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Permisos</strong></p></td>
+<td><p>Gestión exclusiva de usuarios, sin acceso a configuraciones de producto o proyecto.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<hr class="docutils" />
+<section id="resumen-comparativo">
+<h2>🧠 Resumen comparativo<a class="headerlink" href="#resumen-comparativo" title="Link to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Rol</p></th>
+<th class="head"><p>Alcance</p></th>
+<th class="head"><p>Gestión de usuarios</p></th>
+<th class="head"><p>Configura productos</p></th>
+<th class="head"><p>Administra proyectos</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Organization Admin</p></td>
+<td><p>Toda la organización</p></td>
+<td><p>✅ Sí</p></td>
+<td><p>✅ Sí</p></td>
+<td><p>✅ Sí</p></td>
+</tr>
+<tr class="row-odd"><td><p>Site Admin</p></td>
+<td><p>Un sitio específico</p></td>
+<td><p>✅ Sí</p></td>
+<td><p>✅ Sí</p></td>
+<td><p>✅ Sí</p></td>
+</tr>
+<tr class="row-even"><td><p>Product Admin</p></td>
+<td><p>Un producto (Jira, etc)</p></td>
+<td><p>❌ No</p></td>
+<td><p>✅ Sí</p></td>
+<td><p>✅ Sí</p></td>
+</tr>
+<tr class="row-odd"><td><p>Project Admin</p></td>
+<td><p>Un proyecto</p></td>
+<td><p>❌ No</p></td>
+<td><p>⚠️ Parcial</p></td>
+<td><p>✅ Sí</p></td>
+</tr>
+<tr class="row-even"><td><p>User Admin</p></td>
+<td><p>Usuarios globales</p></td>
+<td><p>✅ Sí</p></td>
+<td><p>❌ No</p></td>
+<td><p>❌ No</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="warning admonition">
+<p class="admonition-title">Importante</p>
+<p>Los Organization Admins y los Site Admins, al estar por encima de un producto en particular, consume licencias de todas las apps instaladas en ese site o esa organization.</p>
+</div>
+</section>
+<hr class="docutils" />
+<section id="notas-adicionales">
+<h2>📝 Notas adicionales<a class="headerlink" href="#notas-adicionales" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Un mismo usuario puede tener <strong>varios de estos roles simultáneamente</strong>.</p></li>
+<li><p>La correcta asignación de estos niveles es clave para mantener <strong>seguridad, control y delegación efectiva</strong>.</p></li>
+<li><p>Para administrar estos roles, se accede generalmente desde <strong><a class="reference external" href="http://admin.atlassian.com">admin.atlassian.com</a></strong> o desde la sección de configuración del producto.</p></li>
+</ul>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -466,6 +677,27 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#organization-administrator">🏢 Organization Administrator</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#site-administrator">🌐 Site Administrator</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#product-administrator-jira-admin">🛠️ Product Administrator (Jira Admin)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project-administrator">📁 Project Administrator</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#user-administrator">👤 User Administrator</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resumen-comparativo">🧠 Resumen comparativo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#notas-adicionales">📝 Notas adicionales</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
