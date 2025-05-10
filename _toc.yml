@@ -1,43 +1,50 @@
 # Table of contents
 # Learn more at https://jupyterbook.org/customize/toc.html
+# Archivo: _toc.yml
+# Este archivo define la estructura de tu jupyter-book.
 
 format: jb-book
-root: content/introduccion
+root: root/introduccion
 parts:
-  - caption: Entrando al mundo Atlassian
+  - caption: 'Parte 1: ¿Qué es Atlassian?'
     chapters:
-    - file: content/capitulo-1/primeros-pasos.md
-      title: "Primeros pasos"
-    - file: content/capitulo-1/data-center-vs-cloud.md
-      title: "1. Atlassian Cloud vs Data Center"
-    - file: content/capitulo-1/organizations-introduccion.md
-      title: "2. ¿Qué es una organización?"
-    - file: content/capitulo-1/productos-jira.md
-      title: "3. Jira"
-    - file: content/capitulo-1/licenciamiento.md
-      title: "4. Esquemas de licenciamiento"
-    - file: content/capitulo-1/administrators.md
-      title: "5. Administradores"
-    - file: content/capitulo-1/crear-instancia.md
-      title: "6. Crear una instancia"
-    - file: content/capitulo-1/atlassian-community.md
-      title: "7. Comunidad Atlassian"
-  - caption: Jira
+      - file: capitulos/01_que_es_atlassian/01_que_es_atlassian.md
+  - caption: 'Parte 2: Fundamentos de la Organización y el Licenciamiento'
     chapters:
-    - file: content/tipos-de-proyectos.md
-    - file: content/issues-y-workflows.md
-    - file: content/tableros-y-agiles.md
-    - file: content/automatizaciones.md
-    - file: content/reportes-y-metricas.md
-  - caption: Jira Service Management
+      - file: capitulos/02_cuentas_sitios_organizaciones/intro_02_cuentas_sitios_organizaciones.md
+        sections:
+          - file: capitulos/02_cuentas_sitios_organizaciones/organizations-introduccion.md
+          - file: capitulos/02_cuentas_sitios_organizaciones/que-es-un-sitio.md
+          - file: capitulos/02_cuentas_sitios_organizaciones/que-es-una-cuenta.md
+          - file: capitulos/02_cuentas_sitios_organizaciones/administrators.md
+      - file: capitulos/03_opciones_despliegue_licenciamiento/03_opciones_despliegue_licenciamiento.md
+        sections:
+          - file: capitulos/03_opciones_despliegue_licenciamiento/data-center-vs-cloud.md
+      - file: capitulos/04_procesos_compra_facturacion
+      - file: capitulos/05_privacidad_gestion_datos
+  - caption: 'Parte 3: Jira: Gestión de Proyectos y Seguimiento de Incidencias'
     chapters:
-    - file: content/administracion-del-sitio.md
-    - file: content/integraciones-y-extensiones.md
-    - file: content/casos-practicos.md
-  - caption: Anexos
+      - file: capitulos/06_introduccion_jira
+      - file: capitulos/07_proyectos_jira
+      - file: capitulos/08_issues_tipos_issue
+      - file: capitulos/09_workflows
+      - file: capitulos/10_paneles_campos
+      - file: capitulos/11_permisos_roles
+  - caption: 'Parte 4: Jira Service Management: Gestión de Servicios'
     chapters:
-    - file: content/como-usar-este-libro.md
-      title: "Cómo usar este libro"
-    - file: README.md
-      title: "Acerca de este libro"
-
+      - file: capitulos/12_introduccion_jsm
+      - file: capitulos/13_configuracion_especifica_jsm
+  - caption: 'Parte 5: Características Avanzadas e Integraciones'
+    chapters:
+      - file: capitulos/14_automatizacion
+      - file: capitulos/15_informes_paneles_control
+      - file: capitulos/16_timeline_planificacion
+      - file: capitulos/17_integraciones_aplicaciones
+      - file: capitulos/18_migracion_opciones_enterprise
+      - file: capitulos/19_recursos_adicionales_soporte/19_recursos_adicionales_soporte.md
+        sections:
+          - file: capitulos/19_recursos_adicionales_soporte/atlassian-community.md
+      - file: root/como-usar-este-libro.md
+        title: "Cómo usar este libro"
+      - file: README.md
+        title: "Acerca de este libro"

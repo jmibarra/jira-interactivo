@@ -1,2 +1,0 @@
-# Reportes y métricas
-
