@@ -1,4 +1,4 @@
-# Atlassian Cloud vs Data Center
+# 3.1. Atlassian Cloud vs Data Center
 
 <span class="badge badge-jira">Jira</span><span class="badge badge-jsm">Jira Service Management</span>
 
