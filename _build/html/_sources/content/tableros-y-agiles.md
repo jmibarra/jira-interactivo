@@ -1,2 +1,0 @@
-# Tableros y metodologías ágiles
-
