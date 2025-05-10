@@ -26,3 +26,12 @@ Para aprovechar al máximo este libro y las herramientas que trata, se recomiend
 Si bien no es obligatorio tener experiencia previa con Jira, contar con estos conocimientos ayudará a que la experiencia de aprendizaje sea más fluida y efectiva.
 
 ---
+
+## Estructura del libro
+
+El libro cuenta con referencias y tags que facilitan entender el contexto en el que trabajamos.
+
+```{admonition} Referencia
+:class: seealso
+Pueden ver más información sobre este tema en la seccion [Cómo usar este libro](como-usar-este-libro.md)
+```
