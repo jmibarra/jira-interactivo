@@ -1,0 +1,695 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>2.2. ¿Qué es un Sitio Atlassian? &#8212; Jira from scratch</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=5c194aa9" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'capitulos/02_cuentas_sitios_organizaciones/que-es-un-sitio';</script>
+    <link rel="icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="2.3. ¿Qué es una cuenta?" href="que-es-una-cuenta.html" />
+    <link rel="prev" title="2.1. ¿Qué es una organización?" href="organizations-introduccion.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../root/introduccion.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/book-logo5.png" class="logo__image only-light" alt="Jira from scratch - Home"/>
+    <script>document.write(`<img src="../../_static/book-logo5.png" class="logo__image only-dark" alt="Jira from scratch - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../root/introduccion.html">
+                    Introducción
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Parte 1: ¿Qué es Atlassian?</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../01_que_es_atlassian/01_que_es_atlassian.html">Capítulo 1: ¿Qué es Atlassian?</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Parte 2: Fundamentos de la Organización y el Licenciamiento</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="intro_02_cuentas_sitios_organizaciones.html">Capítulo 2: Cuentas, Sitios y Organizaciones Atlassian</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="organizations-introduccion.html">2.1. ¿Qué es una organización?</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">2.2. ¿Qué es un Sitio Atlassian?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="que-es-una-cuenta.html">2.3. ¿Qué es una cuenta?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="administrators.html">2.4. Administradores</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../03_opciones_despliegue_licenciamiento/03_opciones_despliegue_licenciamiento.html">Capítulo 3: Opciones de Despliegue y Licenciamiento</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../03_opciones_despliegue_licenciamiento/data-center-vs-cloud.html">Atlassian Cloud vs Data Center</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../04_procesos_compra_facturacion.html">Capítulo 4: Procesos de Compra y Facturación</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../05_privacidad_gestion_datos.html">Capítulo 5: Privacidad y Gestión de Datos</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Parte 3: Jira: Gestión de Proyectos y Seguimiento de Incidencias</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../06_introduccion_jira.html">Capítulo 6: Introducción a Jira</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../07_proyectos_jira.html">Capítulo 7: Proyectos en Jira</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../08_issues_tipos_issue.html">Capítulo 8: Issues y Tipos de Issue</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../09_workflows.html">Capítulo 9: Workflows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../10_paneles_campos.html">Capítulo 10: Paneles y Campos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../11_permisos_roles.html">Capítulo 11: Permisos y Roles</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Parte 4: Jira Service Management: Gestión de Servicios</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../12_introduccion_jsm.html">Capítulo 12: Introducción a Jira Service Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../13_configuracion_especifica_jsm.html">Capítulo 13: Configuración Específica de JSM</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Parte 5: Características Avanzadas e Integraciones</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../14_automatizacion.html">Capítulo 14: Automatización</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../15_informes_paneles_control.html">Capítulo 15: Informes y Paneles de Control</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../16_timeline_planificacion.html">Capítulo 16: Timeline y Planificación</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../17_integraciones_aplicaciones.html">Capítulo 17: Integraciones y Aplicaciones</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../18_migracion_opciones_enterprise.html">Capítulo 18: Migración y Opciones Enterprise</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../19_recursos_adicionales_soporte/19_recursos_adicionales_soporte.html">Capítulo 19: Recursos Adicionales y Soporte</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../19_recursos_adicionales_soporte/atlassian-community.html">19.1. Comunidad Atlassian</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../root/como-usar-este-libro.html">Cómo usar este libro</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../README.html">Acerca de este libro</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/jmibarra/jira-interactivo" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/jmibarra/jira-interactivo/issues/new?title=Issue%20on%20page%20%2Fcapitulos/02_cuentas_sitios_organizaciones/que-es-un-sitio.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/capitulos/02_cuentas_sitios_organizaciones/que-es-un-sitio.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>2.2. ¿Qué es un Sitio Atlassian?</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#identificacion-unica-la-url-del-sitio">Identificación Única: La URL del Sitio</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ubicacion-en-la-jerarquia-dentro-de-la-organizacion">Ubicación en la Jerarquía: Dentro de la Organización</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#que-contiene-tu-sitio-productos-y-usuarios">¿Qué Contiene Tu Sitio? Productos y Usuarios</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#el-rol-del-administrador-de-sitio">El Rol del Administrador de Sitio</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sitios-y-el-licenciamiento-especialmente-en-cloud">Sitios y el Licenciamiento (Especialmente en Cloud)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sitios-y-facturacion-una-relacion-en-evolucion">Sitios y Facturación: Una Relación en Evolución</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#otras-particularidades-del-sitio">Otras Particularidades del Sitio</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resumen">Resumen</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="que-es-un-sitio-atlassian">
+<h1>2.2. ¿Qué es un Sitio Atlassian?<a class="headerlink" href="#que-es-un-sitio-atlassian" title="Link to this heading">#</a></h1>
+<p><span class="badge badge-organization">Organization</span></p>
+<p>En términos sencillos, un <strong>Sitio Atlassian</strong> es una instancia específica de los productos Atlassian Cloud bajo tu Organización<a class="footnote-reference brackets" href="#id29" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>. Piensa en él como la instalación de software para tu equipo o empresa en la nube de Atlassian. Es el entorno operativo donde tus aplicaciones como Jira Software, Jira Service Management, Confluence, etc., están instaladas y funcionando<a class="footnote-reference brackets" href="#id30" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a>.</p>
+<section id="identificacion-unica-la-url-del-sitio">
+<h2>Identificación Única: La URL del Sitio<a class="headerlink" href="#identificacion-unica-la-url-del-sitio" title="Link to this heading">#</a></h2>
+<p>Cada Sitio Atlassian tiene una dirección web única (URL). Cuando creas un nuevo sitio o te registras en un producto por primera vez, se te pide que elijas un nombre para tu sitio. Este nombre formará parte de la URL que usas para acceder a él, típicamente siguiendo el formato <code class="docutils literal notranslate"><span class="pre">https://&lt;nombre_de_tu_sitio&gt;.atlassian.net</span></code>. Esta URL es la puerta de entrada a tu instancia específica de Atlassian Cloud [Mencionado en conversación previa y soportado implícitamente por el contexto de URL de acceso en fuentes como 113, 119].</p>
+</section>
+<section id="ubicacion-en-la-jerarquia-dentro-de-la-organizacion">
+<h2>Ubicación en la Jerarquía: Dentro de la Organización<a class="headerlink" href="#ubicacion-en-la-jerarquia-dentro-de-la-organizacion" title="Link to this heading">#</a></h2>
+<p>Como vimos en la introducción general, el Sitio no existe de forma aislada. Un Sitio siempre está asociado y reside bajo una <strong>Organización Atlassian</strong><a class="footnote-reference brackets" href="#id29" id="id3" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>. Una sola Organización puede tener uno o más Sitios bajo su control<a class="footnote-reference brackets" href="#id31" id="id4" role="doc-noteref"><span class="fn-bracket">[</span>5<span class="fn-bracket">]</span></a>. Es importante entender que esta estructura de Organización y Sitio es fundamental en el modelo de Atlassian Cloud y, según Atlassian, no va a desaparecer [^89, Mencionado en conversación previa].</p>
+</section>
+<section id="que-contiene-tu-sitio-productos-y-usuarios">
+<h2>¿Qué Contiene Tu Sitio? Productos y Usuarios<a class="headerlink" href="#que-contiene-tu-sitio-productos-y-usuarios" title="Link to this heading">#</a></h2>
+<p>Dentro de un Sitio Atlassian, encontrarás:</p>
+<ul class="simple">
+<li><p><strong>Instancias de Productos/Apps:</strong> Es aquí donde instalas y utilizas las aplicaciones que tu equipo necesita<a class="footnote-reference brackets" href="#id30" id="id5" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a>. Puedes tener Jira Software, Confluence, Jira Service Management y otras apps del Marketplace funcionando dentro del mismo sitio<a class="footnote-reference brackets" href="#id30" id="id6" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a>. Las aplicaciones del Marketplace, por ejemplo, se gestionan y se activan para un sitio<a class="footnote-reference brackets" href="#id32" id="id7" role="doc-noteref"><span class="fn-bracket">[</span>8<span class="fn-bracket">]</span></a>.</p></li>
+<li><p><strong>Usuarios:</strong> Las cuentas de usuario se gestionan a nivel de sitio para determinar quién tiene acceso a qué productos dentro de ese sitio<a class="footnote-reference brackets" href="#id33" id="id8" role="doc-noteref"><span class="fn-bracket">[</span>4<span class="fn-bracket">]</span></a>. Un <strong>Administrador de Sitio</strong> tiene la capacidad de añadir o eliminar usuarios en cualquier momento<a class="footnote-reference brackets" href="#id33" id="id9" role="doc-noteref"><span class="fn-bracket">[</span>4<span class="fn-bracket">]</span></a>.</p></li>
+<li><p><strong>Configuraciones Específicas:</strong> La configuración de tus proyectos, espacios, permisos a nivel de proyecto o espacio, flujos de trabajo, etc., todo reside dentro del Sitio.</p></li>
+</ul>
+</section>
+<section id="el-rol-del-administrador-de-sitio">
+<h2>El Rol del Administrador de Sitio<a class="headerlink" href="#el-rol-del-administrador-de-sitio" title="Link to this heading">#</a></h2>
+<p>El <strong>Administrador de Sitio</strong> es un rol crucial dentro de un Sitio Atlassian. Sus permisos y responsabilidades están limitados a ese sitio específico [Soportado implícitamente por el contraste con el Administrador de Organización en 1 y el ámbito de gestión de usuarios y productos a nivel de sitio en 110, 111]. Las tareas típicas de un Administrador de Sitio incluyen:</p>
+<ul class="simple">
+<li><p>Invitar y gestionar usuarios para ese sitio<a class="footnote-reference brackets" href="#id33" id="id10" role="doc-noteref"><span class="fn-bracket">[</span>4<span class="fn-bracket">]</span></a>.</p></li>
+<li><p>Asignar licencias de productos a los usuarios en ese sitio<a class="footnote-reference brackets" href="#id33" id="id11" role="doc-noteref"><span class="fn-bracket">[</span>4<span class="fn-bracket">]</span></a>.</p></li>
+<li><p>Instalar, configurar y gestionar las aplicaciones y productos instalados en ese sitio<a class="footnote-reference brackets" href="#id32" id="id12" role="doc-noteref"><span class="fn-bracket">[</span>8<span class="fn-bracket">]</span></a>.</p></li>
+<li><p>Configurar aspectos funcionales de las aplicaciones (proyectos, espacios, permisos internos, etc.).</p></li>
+</ul>
+<p>Mientras que el <strong>Administrador de Organización</strong> tiene una vista global de todos los sitios bajo la organización<a class="footnote-reference brackets" href="#id34" id="id13" role="doc-noteref"><span class="fn-bracket">[</span>11<span class="fn-bracket">]</span></a>, el Administrador de Sitio se enfoca en la operación diaria y la configuración de una instancia específica del producto<a class="footnote-reference brackets" href="#id33" id="id14" role="doc-noteref"><span class="fn-bracket">[</span>4<span class="fn-bracket">]</span></a>. Se accede a la administración a nivel de sitio, por ejemplo, para gestionar usuarios o revisar el uso actual desde el panel de Administración de tu sitio<a class="footnote-reference brackets" href="#id35" id="id15" role="doc-noteref"><span class="fn-bracket">[</span>10<span class="fn-bracket">]</span></a>.</p>
+</section>
+<section id="sitios-y-el-licenciamiento-especialmente-en-cloud">
+<h2>Sitios y el Licenciamiento (Especialmente en Cloud)<a class="headerlink" href="#sitios-y-el-licenciamiento-especialmente-en-cloud" title="Link to this heading">#</a></h2>
+<p>El concepto de Sitio está intrínsecamente ligado al licenciamiento en Atlassian Cloud. El modelo de Atlassian se basa en <strong>usuarios designados</strong>, lo que significa que cada cuenta con permiso para iniciar sesión consume una licencia<a class="footnote-reference brackets" href="#id33" id="id16" role="doc-noteref"><span class="fn-bracket">[</span>4<span class="fn-bracket">]</span></a>. Para las suscripciones de Cloud que se renuevan mensualmente, el precio se basa en el número exacto de usuarios con licencia<a class="footnote-reference brackets" href="#id33" id="id17" role="doc-noteref"><span class="fn-bracket">[</span>4<span class="fn-bracket">]</span></a>. Esto significa que cualquier cambio en el número de usuarios realizado por un Administrador de Sitio afectará directamente el precio de la próxima renovación<a class="footnote-reference brackets" href="#id33" id="id18" role="doc-noteref"><span class="fn-bracket">[</span>4<span class="fn-bracket">]</span></a>. Para las suscripciones anuales, el precio se basa en niveles de usuario, ofreciendo flexibilidad dentro de un umbral, pero el número total de usuarios licenciados en ese sitio (o en la organización para la facturación agrupada) sigue siendo el factor determinante<a class="footnote-reference brackets" href="#id33" id="id19" role="doc-noteref"><span class="fn-bracket">[</span>4<span class="fn-bracket">]</span></a>.</p>
+</section>
+<section id="sitios-y-facturacion-una-relacion-en-evolucion">
+<h2>Sitios y Facturación: Una Relación en Evolución<a class="headerlink" href="#sitios-y-facturacion-una-relacion-en-evolucion" title="Link to this heading">#</a></h2>
+<p>Históricamente, la facturación de las suscripciones de Cloud estaba muy ligada al Sitio, facturándose sitio por sitio<a class="footnote-reference brackets" href="#id36" id="id20" role="doc-noteref"><span class="fn-bracket">[</span>13<span class="fn-bracket">]</span></a>. La gestión de facturación para la experiencia “original” se realizaba a menudo a través de <code class="docutils literal notranslate"><span class="pre">my.atlassian.com</span></code>, donde los contactos técnicos y de facturación designados podían ver y pagar facturas o gestionar la información de pago asociada a un sitio<a class="footnote-reference brackets" href="#id37" id="id21" role="doc-noteref"><span class="fn-bracket">[</span>16<span class="fn-bracket">]</span></a>.</p>
+<p>Con la introducción del nuevo motor de facturación mejorado, la facturación se traslada a una estructura de <strong>Cuenta de Facturación</strong>, que permite agrupar varios sitios bajo una sola cuenta de facturación para simplificar la gestión y el pago<a class="footnote-reference brackets" href="#id31" id="id22" role="doc-noteref"><span class="fn-bracket">[</span>5<span class="fn-bracket">]</span></a>. Aunque la estructura de pago ha cambiado para ofrecer más flexibilidad<a class="footnote-reference brackets" href="#id38" id="id23" role="doc-noteref"><span class="fn-bracket">[</span>14<span class="fn-bracket">]</span></a>, los sitios siguen siendo las instancias donde residen las suscripciones de productos de Cloud<a class="footnote-reference brackets" href="#id39" id="id24" role="doc-noteref"><span class="fn-bracket">[</span>15<span class="fn-bracket">]</span></a>. La gestión del método de pago para las suscripciones bajo el nuevo motor de facturación se realiza ahora a través de <code class="docutils literal notranslate"><span class="pre">admin.atlassian.com/billing</span></code>, seleccionando la cuenta de facturación (que puede contener múltiples sitios)<a class="footnote-reference brackets" href="#id40" id="id25" role="doc-noteref"><span class="fn-bracket">[</span>18<span class="fn-bracket">]</span></a>.</p>
+</section>
+<section id="otras-particularidades-del-sitio">
+<h2>Otras Particularidades del Sitio<a class="headerlink" href="#otras-particularidades-del-sitio" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Pruebas Gratuitas:</strong> Las versiones de prueba de los productos Cloud se asocian a un sitio específico<a class="footnote-reference brackets" href="#id41" id="id26" role="doc-noteref"><span class="fn-bracket">[</span>20<span class="fn-bracket">]</span></a>.</p></li>
+<li><p><strong>Ubicación de Datos:</strong> Aunque Atlassian gestiona activamente la ubicación de los datos para optimizar el rendimiento, para organizaciones con productos Enterprise, los administradores de organización pueden fijar el contenido del producto en reposo a un dominio<a class="footnote-reference brackets" href="#id42" id="id27" role="doc-noteref"><span class="fn-bracket">[</span>21<span class="fn-bracket">]</span></a>. Esto contrasta fuertemente con los productos Data Center, donde el cliente autogestiona el alojamiento y, por lo tanto, la ubicación de los datos<a class="footnote-reference brackets" href="#id43" id="id28" role="doc-noteref"><span class="fn-bracket">[</span>22<span class="fn-bracket">]</span></a>.</p></li>
+</ul>
+</section>
+<section id="resumen">
+<h2>Resumen<a class="headerlink" href="#resumen" title="Link to this heading">#</a></h2>
+<p>En resumen, el <strong>Sitio Atlassian</strong> es tu entorno de trabajo real en la nube, el lugar donde tus equipos interactúan con las aplicaciones, donde se gestionan los usuarios que acceden a esas herramientas, y cuya existencia e historial está fuertemente ligada a la facturación, aunque el modelo de pago se esté centralizando a nivel de cuenta de facturación en la nueva experiencia. Es un componente esencial para entender cómo se organiza el acceso y el uso de las herramientas de Atlassian en el entorno Cloud.</p>
+<hr class="docutils" />
+<p>Notas</p>
+<hr class="footnotes docutils" />
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="id29" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></span>
+<span class="backrefs">(<a role="doc-backlink" href="#id1">1</a>,<a role="doc-backlink" href="#id3">2</a>)</span>
+<p>Un Sitio Atlassian es una instancia específica de los productos Atlassian Cloud bajo tu Organización. Un Sitio siempre está asociado y reside bajo una Organización Atlassian.</p>
+</aside>
+<aside class="footnote brackets" id="id30" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></span>
+<span class="backrefs">(<a role="doc-backlink" href="#id2">1</a>,<a role="doc-backlink" href="#id5">2</a>,<a role="doc-backlink" href="#id6">3</a>)</span>
+<p>Es el entorno operativo donde tus aplicaciones como Jira Software, Jira Service Management, Confluence, etc., están instaladas y funcionando. Es aquí donde instalas y utilizas las aplicaciones que tu equipo necesita. Puedes tener Jira Software, Confluence, Jira Service Management y otras apps del Marketplace funcionando dentro del mismo sitio.</p>
+</aside>
+<aside class="footnote brackets" id="id31" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span>5<span class="fn-bracket">]</span></span>
+<span class="backrefs">(<a role="doc-backlink" href="#id4">1</a>,<a role="doc-backlink" href="#id22">2</a>)</span>
+<p>Una sola Organización puede tener uno o más Sitios bajo su control. La facturación se traslada a una estructura de Cuenta de Facturación, que permite agrupar varios sitios bajo una sola cuenta de facturación para simplificar la gestión y el pago.</p>
+</aside>
+<aside class="footnote brackets" id="id32" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span>8<span class="fn-bracket">]</span></span>
+<span class="backrefs">(<a role="doc-backlink" href="#id7">1</a>,<a role="doc-backlink" href="#id12">2</a>)</span>
+<p>Las aplicaciones del Marketplace, por ejemplo, se gestionan y se activan para un sitio. Instalar, configurar y gestionar las aplicaciones y productos instalados en ese sitio.</p>
+</aside>
+<aside class="footnote brackets" id="id33" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span>4<span class="fn-bracket">]</span></span>
+<span class="backrefs">(<a role="doc-backlink" href="#id8">1</a>,<a role="doc-backlink" href="#id9">2</a>,<a role="doc-backlink" href="#id10">3</a>,<a role="doc-backlink" href="#id11">4</a>,<a role="doc-backlink" href="#id14">5</a>,<a role="doc-backlink" href="#id16">6</a>,<a role="doc-backlink" href="#id17">7</a>,<a role="doc-backlink" href="#id18">8</a>,<a role="doc-backlink" href="#id19">9</a>)</span>
+<p>Las cuentas de usuario se gestionan a nivel de sitio para determinar quién tiene acceso a qué productos dentro de ese sitio. Un Administrador de Sitio tiene la capacidad de añadir o eliminar usuarios en cualquier momento. El modelo de Atlassian se basa en usuarios designados, lo que significa que cada cuenta con permiso para iniciar sesión consume una licencia. Para las suscripciones de Cloud que se renuevan mensualmente, el precio se basa en el número exacto de usuarios con licencia. Cualquier cambio en el número de usuarios realizado por un Administrador de Sitio afectará directamente el precio de la próxima renovación. Para las suscripciones anuales, el precio se basa en niveles de usuario, ofreciendo flexibilidad dentro de un umbral, pero el número total de usuarios licenciados en ese sitio (o en la organización para la facturación agrupada) sigue siendo el factor determinante.</p>
+</aside>
+<aside class="footnote brackets" id="id34" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id13">11</a><span class="fn-bracket">]</span></span>
+<p>Mientras que el Administrador de Organización tiene una vista global de todos los sitios bajo la organización.</p>
+</aside>
+<aside class="footnote brackets" id="id35" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id15">10</a><span class="fn-bracket">]</span></span>
+<p>Se accede a la administración a nivel de sitio, por ejemplo, para gestionar usuarios o revisar el uso actual desde el panel de Administración de tu sitio.</p>
+</aside>
+<aside class="footnote brackets" id="id36" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id20">13</a><span class="fn-bracket">]</span></span>
+<p>Históricamente, la facturación de las suscripciones de Cloud estaba muy ligada al Sitio, facturándose sitio por sitio.</p>
+</aside>
+<aside class="footnote brackets" id="id37" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id21">16</a><span class="fn-bracket">]</span></span>
+<p>La gestión de facturación para la experiencia “original” se realizaba a menudo a través de <a class="reference external" href="http://my.atlassian.com">my.atlassian.com</a>, donde los contactos técnicos y de facturación designados podían ver y pagar facturas o gestionar la información de pago asociada a un sitio.</p>
+</aside>
+<aside class="footnote brackets" id="id38" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id23">14</a><span class="fn-bracket">]</span></span>
+<p>Aunque la estructura de pago ha cambiado para ofrecer más flexibilidad.</p>
+</aside>
+<aside class="footnote brackets" id="id39" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id24">15</a><span class="fn-bracket">]</span></span>
+<p>Los sitios siguen siendo las instancias donde residen las suscripciones de productos de Cloud.</p>
+</aside>
+<aside class="footnote brackets" id="id40" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id25">18</a><span class="fn-bracket">]</span></span>
+<p>La gestión del método de pago para las suscripciones bajo el nuevo motor de facturación se realiza ahora a través de <a class="reference external" href="http://admin.atlassian.com/billing">admin.atlassian.com/billing</a>, seleccionando la cuenta de facturación (que puede contener múltiples sitios).</p>
+</aside>
+<aside class="footnote brackets" id="id41" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id26">20</a><span class="fn-bracket">]</span></span>
+<p>Las versiones de prueba de los productos Cloud se asocian a un sitio específico.</p>
+</aside>
+<aside class="footnote brackets" id="id42" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id27">21</a><span class="fn-bracket">]</span></span>
+<p>Aunque Atlassian gestiona activamente la ubicación de los datos para optimizar el rendimiento, para organizaciones con productos Enterprise, los administradores de organización pueden fijar el contenido del producto en reposo a un dominio.</p>
+</aside>
+<aside class="footnote brackets" id="id43" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id28">22</a><span class="fn-bracket">]</span></span>
+<p>Esto contrasta fuertemente con los productos Data Center, donde el cliente autogestiona el alojamiento y, por lo tanto, la ubicación de los datos.</p>
+</aside>
+</aside>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "jmibarra/jira-interactivo",
+            ref: "main",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./capitulos/02_cuentas_sitios_organizaciones"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="organizations-introduccion.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">2.1. ¿Qué es una organización?</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="que-es-una-cuenta.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">2.3. ¿Qué es una cuenta?</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#identificacion-unica-la-url-del-sitio">Identificación Única: La URL del Sitio</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ubicacion-en-la-jerarquia-dentro-de-la-organizacion">Ubicación en la Jerarquía: Dentro de la Organización</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#que-contiene-tu-sitio-productos-y-usuarios">¿Qué Contiene Tu Sitio? Productos y Usuarios</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#el-rol-del-administrador-de-sitio">El Rol del Administrador de Sitio</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sitios-y-el-licenciamiento-especialmente-en-cloud">Sitios y el Licenciamiento (Especialmente en Cloud)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sitios-y-facturacion-una-relacion-en-evolucion">Sitios y Facturación: Una Relación en Evolución</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#otras-particularidades-del-sitio">Otras Particularidades del Sitio</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resumen">Resumen</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Juan Manuel Ibarra
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

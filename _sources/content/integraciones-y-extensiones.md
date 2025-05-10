@@ -1,2 +1,0 @@
-# Integraciones y extensiones
-

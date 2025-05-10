@@ -1,0 +1,698 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>2.3. ¿Qué es una cuenta? &#8212; Jira from scratch</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=5c194aa9" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'capitulos/02_cuentas_sitios_organizaciones/que-es-una-cuenta';</script>
+    <link rel="icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="2.4. Administradores" href="administrators.html" />
+    <link rel="prev" title="2.2. ¿Qué es un Sitio Atlassian?" href="que-es-un-sitio.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../root/introduccion.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/book-logo5.png" class="logo__image only-light" alt="Jira from scratch - Home"/>
+    <script>document.write(`<img src="../../_static/book-logo5.png" class="logo__image only-dark" alt="Jira from scratch - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../root/introduccion.html">
+                    Introducción
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Parte 1: ¿Qué es Atlassian?</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../01_que_es_atlassian/01_que_es_atlassian.html">Capítulo 1: ¿Qué es Atlassian?</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Parte 2: Fundamentos de la Organización y el Licenciamiento</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="intro_02_cuentas_sitios_organizaciones.html">Capítulo 2: Cuentas, Sitios y Organizaciones Atlassian</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="organizations-introduccion.html">2.1. ¿Qué es una organización?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="que-es-un-sitio.html">2.2. ¿Qué es un Sitio Atlassian?</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">2.3. ¿Qué es una cuenta?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="administrators.html">2.4. Administradores</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../03_opciones_despliegue_licenciamiento/03_opciones_despliegue_licenciamiento.html">Capítulo 3: Opciones de Despliegue y Licenciamiento</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../03_opciones_despliegue_licenciamiento/data-center-vs-cloud.html">Atlassian Cloud vs Data Center</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../04_procesos_compra_facturacion.html">Capítulo 4: Procesos de Compra y Facturación</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../05_privacidad_gestion_datos.html">Capítulo 5: Privacidad y Gestión de Datos</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Parte 3: Jira: Gestión de Proyectos y Seguimiento de Incidencias</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../06_introduccion_jira.html">Capítulo 6: Introducción a Jira</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../07_proyectos_jira.html">Capítulo 7: Proyectos en Jira</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../08_issues_tipos_issue.html">Capítulo 8: Issues y Tipos de Issue</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../09_workflows.html">Capítulo 9: Workflows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../10_paneles_campos.html">Capítulo 10: Paneles y Campos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../11_permisos_roles.html">Capítulo 11: Permisos y Roles</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Parte 4: Jira Service Management: Gestión de Servicios</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../12_introduccion_jsm.html">Capítulo 12: Introducción a Jira Service Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../13_configuracion_especifica_jsm.html">Capítulo 13: Configuración Específica de JSM</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Parte 5: Características Avanzadas e Integraciones</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../14_automatizacion.html">Capítulo 14: Automatización</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../15_informes_paneles_control.html">Capítulo 15: Informes y Paneles de Control</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../16_timeline_planificacion.html">Capítulo 16: Timeline y Planificación</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../17_integraciones_aplicaciones.html">Capítulo 17: Integraciones y Aplicaciones</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../18_migracion_opciones_enterprise.html">Capítulo 18: Migración y Opciones Enterprise</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../19_recursos_adicionales_soporte/19_recursos_adicionales_soporte.html">Capítulo 19: Recursos Adicionales y Soporte</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../19_recursos_adicionales_soporte/atlassian-community.html">19.1. Comunidad Atlassian</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../root/como-usar-este-libro.html">Cómo usar este libro</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../README.html">Acerca de este libro</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/jmibarra/jira-interactivo" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/jmibarra/jira-interactivo/issues/new?title=Issue%20on%20page%20%2Fcapitulos/02_cuentas_sitios_organizaciones/que-es-una-cuenta.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/capitulos/02_cuentas_sitios_organizaciones/que-es-una-cuenta.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>2.3. ¿Qué es una cuenta?</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#que-es-una-cuenta-atlassian-atlassian-account">¿Qué es una Cuenta Atlassian (Atlassian Account)?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#la-cuenta-atlassian-y-el-id-de-atlassian-atlassian-id">La Cuenta Atlassian y el ID de Atlassian (Atlassian ID)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#acceso-a-productos-y-sitios">Acceso a Productos y Sitios</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cuentas-y-licenciamiento-el-modelo-de-usuario-designado">Cuentas y Licenciamiento: El Modelo de Usuario Designado</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#roles-asociados-a-la-cuenta-de-usuario">Roles Asociados a la Cuenta de Usuario</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tu-cuenta-atlassian-como-centro-de-gestion-segun-la-experiencia-de-facturacion">Tu Cuenta Atlassian como Centro de Gestión (Según la Experiencia de Facturación)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#privacidad-y-tus-datos-personales">Privacidad y tus Datos Personales</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resumen">Resumen</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="que-es-una-cuenta">
+<h1>2.3. ¿Qué es una cuenta?<a class="headerlink" href="#que-es-una-cuenta" title="Link to this heading">#</a></h1>
+<p><span class="badge badge-organization">Organization</span></p>
+<p>Hemos explorado la Organización, el “paraguas” global, y el Sitio, el espacio de trabajo concreto. Ahora, enfoquémonos en el actor principal dentro de estas estructuras: el usuario y su <strong>Cuenta Atlassian</strong>. Tu Cuenta Atlassian es tu identidad personal en el ecosistema Atlassian, tu llave para acceder a los Sitios y utilizar los productos.</p>
+<section id="que-es-una-cuenta-atlassian-atlassian-account">
+<h2>¿Qué es una Cuenta Atlassian (Atlassian Account)?<a class="headerlink" href="#que-es-una-cuenta-atlassian-atlassian-account" title="Link to this heading">#</a></h2>
+<p>Una <strong>Cuenta Atlassian</strong> es tu perfil de usuario individual. Es lo que te permite iniciar sesión en los productos Atlassian Cloud, gestionar ciertos aspectos de tus suscripciones (si tienes los permisos adecuados) y acceder a recursos como la documentación, la comunidad o tu área personal (<code class="docutils literal notranslate"><span class="pre">my.atlassian.com</span></code> en la experiencia original o <code class="docutils literal notranslate"><span class="pre">admin.atlassian.com/billing</span></code> y <code class="docutils literal notranslate"><span class="pre">id.atlassian.com</span></code> en la experiencia mejorada o para la gestión de perfil)<a class="footnote-reference brackets" href="#id32" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>.</p>
+<p>Tu Cuenta Atlassian está ligada a una <strong>dirección de correo electrónico única</strong><a class="footnote-reference brackets" href="#id32" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>. Esta dirección de correo electrónico sirve como tu nombre de usuario para iniciar sesión<a class="footnote-reference brackets" href="#id32" id="id3" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>.</p>
+</section>
+<section id="la-cuenta-atlassian-y-el-id-de-atlassian-atlassian-id">
+<h2>La Cuenta Atlassian y el ID de Atlassian (Atlassian ID)<a class="headerlink" href="#la-cuenta-atlassian-y-el-id-de-atlassian-atlassian-id" title="Link to this heading">#</a></h2>
+<p>La base técnica detrás de tu Cuenta Atlassian es el <strong>Atlassian ID (AAID)</strong><a class="footnote-reference brackets" href="#id33" id="id4" role="doc-noteref"><span class="fn-bracket">[</span>8<span class="fn-bracket">]</span></a>. Piensa en el Atlassian ID como la identificación única y centralizada que Atlassian utiliza para reconocerte en sus diferentes servicios y productos. Cuando gestionas tu perfil, cambias tu correo electrónico o restableces tu contraseña, a menudo lo haces a través de <code class="docutils literal notranslate"><span class="pre">id.atlassian.com</span></code>, la plataforma de gestión de tu Atlassian ID<a class="footnote-reference brackets" href="#id32" id="id5" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>.</p>
+</section>
+<section id="acceso-a-productos-y-sitios">
+<h2>Acceso a Productos y Sitios<a class="headerlink" href="#acceso-a-productos-y-sitios" title="Link to this heading">#</a></h2>
+<p>Para utilizar productos como Jira Software o Confluence en un Sitio Atlassian, necesitas tener una Cuenta Atlassian y que esta cuenta haya sido <strong>añadida al Sitio específico</strong><a class="footnote-reference brackets" href="#id34" id="id6" role="doc-noteref"><span class="fn-bracket">[</span>9<span class="fn-bracket">]</span></a>. Una vez añadido, el administrador del Sitio o un administrador de facturación (dependiendo de la experiencia de facturación) te asignará acceso a los productos específicos instalados en ese sitio<a class="footnote-reference brackets" href="#id35" id="id7" role="doc-noteref"><span class="fn-bracket">[</span>5<span class="fn-bracket">]</span></a>.</p>
+</section>
+<section id="cuentas-y-licenciamiento-el-modelo-de-usuario-designado">
+<h2>Cuentas y Licenciamiento: El Modelo de Usuario Designado<a class="headerlink" href="#cuentas-y-licenciamiento-el-modelo-de-usuario-designado" title="Link to this heading">#</a></h2>
+<p>Este es un concepto fundamental en Atlassian Cloud (y Data Center): el licenciamiento se basa en <strong>Usuarios Designados (Designated Users)</strong><a class="footnote-reference brackets" href="#id36" id="id8" role="doc-noteref"><span class="fn-bracket">[</span>11<span class="fn-bracket">]</span></a>. Esto significa que:</p>
+<ul class="simple">
+<li><p>Cada cuenta de usuario a la que se le otorga permiso para iniciar sesión en una aplicación cuenta como un usuario designado, independientemente de si ha iniciado sesión activamente o no<a class="footnote-reference brackets" href="#id36" id="id9" role="doc-noteref"><span class="fn-bracket">[</span>11<span class="fn-bracket">]</span></a>.</p></li>
+<li><p>El modelo de licenciamiento no se basa en usuarios concurrentes (es decir, cuántas personas usan la aplicación al mismo tiempo)<a class="footnote-reference brackets" href="#id36" id="id10" role="doc-noteref"><span class="fn-bracket">[</span>11<span class="fn-bracket">]</span></a>.</p></li>
+<li><p>Cada inicio de sesión del producto solo puede asignarse a un individuo, una persona designada<a class="footnote-reference brackets" href="#id36" id="id11" role="doc-noteref"><span class="fn-bracket">[</span>11<span class="fn-bracket">]</span></a>.</p></li>
+<li><p>Varias personas no pueden compartir un inicio de sesión en un producto<a class="footnote-reference brackets" href="#id36" id="id12" role="doc-noteref"><span class="fn-bracket">[</span>11<span class="fn-bracket">]</span></a>.</p></li>
+</ul>
+<p>El número total de usuarios designados licenciados en un Sitio es lo que determina el coste de la suscripción, especialmente para los planes mensuales<a class="footnote-reference brackets" href="#id37" id="id13" role="doc-noteref"><span class="fn-bracket">[</span>10<span class="fn-bracket">]</span></a>. Los administradores de sitio pueden añadir o eliminar usuarios en cualquier momento, y estos cambios afectan el precio de la renovación<a class="footnote-reference brackets" href="#id37" id="id14" role="doc-noteref"><span class="fn-bracket">[</span>10<span class="fn-bracket">]</span></a>. Para suscripciones anuales, el precio se basa en niveles de usuario, permitiendo flexibilidad dentro de un umbral, pero el número total de usuarios licenciados sigue siendo el factor clave para el nivel<a class="footnote-reference brackets" href="#id38" id="id15" role="doc-noteref"><span class="fn-bracket">[</span>12<span class="fn-bracket">]</span></a>.</p>
+</section>
+<section id="roles-asociados-a-la-cuenta-de-usuario">
+<h2>Roles Asociados a la Cuenta de Usuario<a class="headerlink" href="#roles-asociados-a-la-cuenta-de-usuario" title="Link to this heading">#</a></h2>
+<p>Más allá de ser un usuario estándar de un producto, una Cuenta Atlassian puede tener roles administrativos importantes:</p>
+<ul class="simple">
+<li><p><strong>Administrador de Sitio:</strong> Una Cuenta Atlassian con este rol tiene permisos para gestionar usuarios dentro de ese sitio específico, asignarles productos, configurar aspectos de las aplicaciones (proyectos, espacios), etc<a class="footnote-reference brackets" href="#id34" id="id16" role="doc-noteref"><span class="fn-bracket">[</span>9<span class="fn-bracket">]</span></a>. Un administrador de sitio puede incluso convertirse en contacto de facturación en la experiencia original<a class="footnote-reference brackets" href="#id39" id="id17" role="doc-noteref"><span class="fn-bracket">[</span>13<span class="fn-bracket">]</span></a>.</p></li>
+<li><p><strong>Contacto Técnico/de Facturación (Experiencia Original):</strong> Cuentas Atlassian con estos roles designados en <code class="docutils literal notranslate"><span class="pre">my.atlassian.com</span></code> podían ver y pagar facturas, añadir otros contactos, generar solicitudes de soporte y gestionar licencias de prueba<a class="footnote-reference brackets" href="#id40" id="id18" role="doc-noteref"><span class="fn-bracket">[</span>3<span class="fn-bracket">]</span></a>. Eran considerados “propietarios del producto” con autoridad para solicitar cambios en la licencia<a class="footnote-reference brackets" href="#id41" id="id19" role="doc-noteref"><span class="fn-bracket">[</span>4<span class="fn-bracket">]</span></a>.</p></li>
+<li><p><strong>Administrador de Facturación (Experiencia Mejorada):</strong> Este es un rol nuevo que reemplaza a los contactos técnico y de facturación en el nuevo motor de facturación<a class="footnote-reference brackets" href="#id42" id="id20" role="doc-noteref"><span class="fn-bracket">[</span>16<span class="fn-bracket">]</span></a>. Una Cuenta Atlassian con este rol tiene permisos de “superusuario” para todas las tareas relacionadas con la facturación y el cobro asociadas a una o más Cuentas de Facturación<a class="footnote-reference brackets" href="#id35" id="id21" role="doc-noteref"><span class="fn-bracket">[</span>5<span class="fn-bracket">]</span></a>. Pueden gestionar datos de pago, pagar facturas, añadir/eliminar otros administradores de facturación y contactos empresariales, y gestionar (con ciertas limitaciones para Enterprise) planes y suscripciones<a class="footnote-reference brackets" href="#id35" id="id22" role="doc-noteref"><span class="fn-bracket">[</span>5<span class="fn-bracket">]</span></a>. Un mismo usuario puede ser administrador de facturación de varias Cuentas de Facturación<a class="footnote-reference brackets" href="#id35" id="id23" role="doc-noteref"><span class="fn-bracket">[</span>5<span class="fn-bracket">]</span></a>. Se recomienda tener al menos dos administradores de facturación por Cuenta de Facturación para asegurar el acceso<a class="footnote-reference brackets" href="#id43" id="id24" role="doc-noteref"><span class="fn-bracket">[</span>19<span class="fn-bracket">]</span></a>.</p></li>
+</ul>
+</section>
+<section id="tu-cuenta-atlassian-como-centro-de-gestion-segun-la-experiencia-de-facturacion">
+<h2>Tu Cuenta Atlassian como Centro de Gestión (Según la Experiencia de Facturación)<a class="headerlink" href="#tu-cuenta-atlassian-como-centro-de-gestion-segun-la-experiencia-de-facturacion" title="Link to this heading">#</a></h2>
+<p>La Cuenta Atlassian es la puerta de acceso a las interfaces de gestión:</p>
+<ul class="simple">
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">my.atlassian.com</span></code>:</strong> El portal para la experiencia de facturación original<a class="footnote-reference brackets" href="#id32" id="id25" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>. Aquí, los contactos designados gestionaban licencias, veían pedidos/facturas y actualizaban la información de pago asociada a los Sitios individuales<a class="footnote-reference brackets" href="#id40" id="id26" role="doc-noteref"><span class="fn-bracket">[</span>3<span class="fn-bracket">]</span></a>.</p></li>
+<li><p><strong><code class="docutils literal notranslate"><span class="pre">admin.atlassian.com/billing</span></code>:</strong> El portal centralizado para la experiencia de facturación mejorada<a class="footnote-reference brackets" href="#id41" id="id27" role="doc-noteref"><span class="fn-bracket">[</span>4<span class="fn-bracket">]</span></a>. Aquí, los administradores de facturación gestionan todo lo relacionado con la facturación a nivel de la Cuenta de Facturación (que puede agrupar varios Sitios)<a class="footnote-reference brackets" href="#id41" id="id28" role="doc-noteref"><span class="fn-bracket">[</span>4<span class="fn-bracket">]</span></a>.</p></li>
+</ul>
+</section>
+<section id="privacidad-y-tus-datos-personales">
+<h2>Privacidad y tus Datos Personales<a class="headerlink" href="#privacidad-y-tus-datos-personales" title="Link to this heading">#</a></h2>
+<p>Tu Cuenta Atlassian contiene datos personales que Atlassian procesa para proveer sus servicios<a class="footnote-reference brackets" href="#id44" id="id29" role="doc-noteref"><span class="fn-bracket">[</span>47<span class="fn-bracket">]</span></a>. Tienes derechos sobre tu información y, en algunos casos, puedes controlar qué datos se recopilan o comparten, dependiendo de tu ubicación, los productos que usas y su configuración<a class="footnote-reference brackets" href="#id45" id="id30" role="doc-noteref"><span class="fn-bracket">[</span>48<span class="fn-bracket">]</span></a>. Atlassian se compromete a proteger estos datos y cumplir con normativas como GDPR, LGPD y CCPA<a class="footnote-reference brackets" href="#id46" id="id31" role="doc-noteref"><span class="fn-bracket">[</span>50<span class="fn-bracket">]</span></a>.</p>
+</section>
+<section id="resumen">
+<h2>Resumen<a class="headerlink" href="#resumen" title="Link to this heading">#</a></h2>
+<p>En resumen, tu <strong>Cuenta Atlassian</strong> es tu identidad digital personal en el universo Atlassian. Te permite acceder a los Sitios y productos, determina (a través del modelo de usuario designado) la base del licenciamiento, y, si tienes roles administrativos, te permite gestionar aspectos clave de las suscripciones y la facturación a través de los portales correspondientes. Entender que tu acceso y los permisos están ligados a esta cuenta individual es crucial para navegar el ecosistema Atlassian.</p>
+<hr class="docutils" />
+<p>Notas</p>
+<hr class="footnotes docutils" />
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="id32" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></span>
+<span class="backrefs">(<a role="doc-backlink" href="#id1">1</a>,<a role="doc-backlink" href="#id2">2</a>,<a role="doc-backlink" href="#id3">3</a>,<a role="doc-backlink" href="#id5">4</a>,<a role="doc-backlink" href="#id25">5</a>)</span>
+<p>Tu Cuenta Atlassian es tu perfil de usuario individual. Te permite iniciar sesión en los productos Atlassian Cloud, gestionar ciertos aspectos de tus suscripciones y acceder a recursos como la documentación, la comunidad o tu área personal (<code class="docutils literal notranslate"><span class="pre">my.atlassian.com</span></code> o <code class="docutils literal notranslate"><span class="pre">admin.atlassian.com/billing</span></code> y <code class="docutils literal notranslate"><span class="pre">id.atlassian.com</span></code>). Tu Cuenta Atlassian está ligada a una dirección de correo electrónico única, que sirve como tu nombre de usuario para iniciar sesión.</p>
+</aside>
+<aside class="footnote brackets" id="id33" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id4">8</a><span class="fn-bracket">]</span></span>
+<p>La base técnica detrás de tu Cuenta Atlassian es el Atlassian ID (AAID).</p>
+</aside>
+<aside class="footnote brackets" id="id34" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span>9<span class="fn-bracket">]</span></span>
+<span class="backrefs">(<a role="doc-backlink" href="#id6">1</a>,<a role="doc-backlink" href="#id16">2</a>)</span>
+<p>Para utilizar productos en un Sitio Atlassian, necesitas tener una Cuenta Atlassian y que esta cuenta haya sido añadida al Sitio específico. Una Cuenta Atlassian con el rol de Administrador de Sitio tiene permisos para gestionar usuarios dentro de ese sitio específico, asignarles productos, configurar aspectos de las aplicaciones, etc.</p>
+</aside>
+<aside class="footnote brackets" id="id35" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span>5<span class="fn-bracket">]</span></span>
+<span class="backrefs">(<a role="doc-backlink" href="#id7">1</a>,<a role="doc-backlink" href="#id21">2</a>,<a role="doc-backlink" href="#id22">3</a>,<a role="doc-backlink" href="#id23">4</a>)</span>
+<p>El administrador de facturación tiene permisos de “superusuario” para todas las tareas relacionadas con la facturación y el cobro asociadas a una o más Cuentas de Facturación. Pueden gestionar datos de pago, pagar facturas, añadir/eliminar otros administradores de facturación y contactos empresariales, y gestionar planes y suscripciones. Un mismo usuario puede ser administrador de facturación de varias Cuentas de Facturación.</p>
+</aside>
+<aside class="footnote brackets" id="id36" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span>11<span class="fn-bracket">]</span></span>
+<span class="backrefs">(<a role="doc-backlink" href="#id8">1</a>,<a role="doc-backlink" href="#id9">2</a>,<a role="doc-backlink" href="#id10">3</a>,<a role="doc-backlink" href="#id11">4</a>,<a role="doc-backlink" href="#id12">5</a>)</span>
+<p>El licenciamiento se basa en Usuarios Designados (Designated Users). Cada cuenta de usuario con permiso para iniciar sesión cuenta como un usuario designado, independientemente de si ha iniciado sesión activamente o no. El modelo no se basa en usuarios concurrentes. Cada inicio de sesión del producto solo puede asignarse a un individuo, y varias personas no pueden compartir un inicio de sesión.</p>
+</aside>
+<aside class="footnote brackets" id="id37" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span>10<span class="fn-bracket">]</span></span>
+<span class="backrefs">(<a role="doc-backlink" href="#id13">1</a>,<a role="doc-backlink" href="#id14">2</a>)</span>
+<p>El número total de usuarios designados licenciados en un Sitio determina el coste de la suscripción, especialmente para los planes mensuales. Los administradores de sitio pueden añadir o eliminar usuarios en cualquier momento, y estos cambios afectan el precio de la renovación.</p>
+</aside>
+<aside class="footnote brackets" id="id38" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id15">12</a><span class="fn-bracket">]</span></span>
+<p>Para suscripciones anuales, el precio se basa en niveles de usuario, permitiendo flexibilidad dentro de un umbral, pero el número total de usuarios licenciados sigue siendo el factor clave para el nivel.</p>
+</aside>
+<aside class="footnote brackets" id="id39" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id17">13</a><span class="fn-bracket">]</span></span>
+<p>Un administrador de sitio puede incluso convertirse en contacto de facturación en la experiencia original.</p>
+</aside>
+<aside class="footnote brackets" id="id40" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span>3<span class="fn-bracket">]</span></span>
+<span class="backrefs">(<a role="doc-backlink" href="#id18">1</a>,<a role="doc-backlink" href="#id26">2</a>)</span>
+<p>Cuentas Atlassian con los roles de Contacto Técnico/de Facturación en <code class="docutils literal notranslate"><span class="pre">my.atlassian.com</span></code> podían ver y pagar facturas, añadir otros contactos, generar solicitudes de soporte y gestionar licencias de prueba.</p>
+</aside>
+<aside class="footnote brackets" id="id41" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span>4<span class="fn-bracket">]</span></span>
+<span class="backrefs">(<a role="doc-backlink" href="#id19">1</a>,<a role="doc-backlink" href="#id27">2</a>,<a role="doc-backlink" href="#id28">3</a>)</span>
+<p>El portal centralizado para la experiencia de facturación mejorada es <code class="docutils literal notranslate"><span class="pre">admin.atlassian.com/billing</span></code>. Tu Cuenta Atlassian contiene datos personales que Atlassian procesa para proveer sus servicios.</p>
+</aside>
+<aside class="footnote brackets" id="id42" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id20">16</a><span class="fn-bracket">]</span></span>
+<p>El rol de Administrador de Facturación reemplaza a los contactos técnico y de facturación en el nuevo motor de facturación.</p>
+</aside>
+<aside class="footnote brackets" id="id43" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id24">19</a><span class="fn-bracket">]</span></span>
+<p>Se recomienda tener al menos dos administradores de facturación por Cuenta de Facturación para asegurar el acceso.</p>
+</aside>
+<aside class="footnote brackets" id="id44" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id29">47</a><span class="fn-bracket">]</span></span>
+<p>Tu Cuenta Atlassian contiene datos personales que Atlassian procesa para proveer sus servicios.</p>
+</aside>
+<aside class="footnote brackets" id="id45" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id30">48</a><span class="fn-bracket">]</span></span>
+<p>Tienes derechos sobre tu información y, en algunos casos, puedes controlar qué datos se recopilan o comparten, dependiendo de tu ubicación, los productos que usas y su configuración.</p>
+</aside>
+<aside class="footnote brackets" id="id46" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id31">50</a><span class="fn-bracket">]</span></span>
+<p>Atlassian se compromete a proteger estos datos y cumplir con normativas como GDPR, LGPD y CCPA.</p>
+</aside>
+</aside>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "jmibarra/jira-interactivo",
+            ref: "main",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./capitulos/02_cuentas_sitios_organizaciones"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="que-es-un-sitio.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">2.2. ¿Qué es un Sitio Atlassian?</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="administrators.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">2.4. Administradores</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#que-es-una-cuenta-atlassian-atlassian-account">¿Qué es una Cuenta Atlassian (Atlassian Account)?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#la-cuenta-atlassian-y-el-id-de-atlassian-atlassian-id">La Cuenta Atlassian y el ID de Atlassian (Atlassian ID)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#acceso-a-productos-y-sitios">Acceso a Productos y Sitios</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cuentas-y-licenciamiento-el-modelo-de-usuario-designado">Cuentas y Licenciamiento: El Modelo de Usuario Designado</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#roles-asociados-a-la-cuenta-de-usuario">Roles Asociados a la Cuenta de Usuario</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tu-cuenta-atlassian-como-centro-de-gestion-segun-la-experiencia-de-facturacion">Tu Cuenta Atlassian como Centro de Gestión (Según la Experiencia de Facturación)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#privacidad-y-tus-datos-personales">Privacidad y tus Datos Personales</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resumen">Resumen</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Juan Manuel Ibarra
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
