@@ -21,7 +21,7 @@ parts:
         sections:
           - file: capitulos/03_opciones_despliegue_licenciamiento/data-center-vs-cloud.md
       - file: capitulos/04_procesos_compra_facturacion
-      - file: capitulos/05_privacidad_gestion_datos
+      - file: capitulos/05_crear-mi-sito-jira
   - caption: 'Parte 3: Jira: Gestión de Proyectos y Seguimiento de trabajo'
     chapters:
       - file: capitulos/06_introduccion_jira
