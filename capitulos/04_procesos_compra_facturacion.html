@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Capítulo 4: Procesos de Compra y Facturación &#8212; Jira from scratch</title>
+    <title>Capítulo 4: Comprendiendo la Compra y Facturación de Productos Atlassian &#8212; Jira from scratch</title>
   
   
   
@@ -198,7 +198,7 @@
 <li class="toctree-l2"><a class="reference internal" href="03_opciones_despliegue_licenciamiento/data-center-vs-cloud.html">3.1. Atlassian Cloud vs Data Center</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Capítulo 4: Procesos de Compra y Facturación</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Capítulo 4: Comprendiendo la Compra y Facturación de Productos Atlassian</a></li>
 <li class="toctree-l1"><a class="reference internal" href="05_privacidad_gestion_datos.html">Capítulo 5: Privacidad y Gestión de Datos</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Parte 3: Jira: Gestión de Proyectos y Seguimiento de Incidencias</span></p>
@@ -400,7 +400,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -411,11 +413,26 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Capítulo 4: Procesos de Compra y Facturación</h1>
+    <h1>Capítulo 4: Comprendiendo la Compra y Facturación de Productos Atlassian</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modelos-de-licenciamiento-y-planes">Modelos de Licenciamiento y Planes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#facturacion-mensual-vs-anual">Facturación Mensual vs. Anual</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metodos-de-pago-aceptados">Métodos de Pago Aceptados</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#procesos-de-compra-y-obtencion-de-presupuestos">Procesos de Compra y Obtención de Presupuestos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#facturacion-de-atlassian-guard-y-usuarios-externos">Facturación de Atlassian Guard y Usuarios Externos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#facturacion-de-aplicaciones-de-marketplace">Facturación de Aplicaciones de Marketplace</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#consideraciones-sobre-politicas-de-seguridad-y-facturacion">Consideraciones sobre Políticas de Seguridad y Facturación</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#soporte-y-ayuda-con-la-facturacion">Soporte y Ayuda con la Facturación</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -425,8 +442,54 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="capitulo-4-procesos-de-compra-y-facturacion">
-<h1>Capítulo 4: Procesos de Compra y Facturación<a class="headerlink" href="#capitulo-4-procesos-de-compra-y-facturacion" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="capitulo-4-comprendiendo-la-compra-y-facturacion-de-productos-atlassian">
+<h1>Capítulo 4: Comprendiendo la Compra y Facturación de Productos Atlassian<a class="headerlink" href="#capitulo-4-comprendiendo-la-compra-y-facturacion-de-productos-atlassian" title="Link to this heading">#</a></h1>
+<p><span class="badge badge-organization">Organization</span></p>
+<p>Atlassian ofrece una amplia gama de productos, incluyendo Jira, Confluence, Jira Service Management, Bitbucket, Trello, Guard, y muchos más. La forma de adquirir y gestionar la facturación de estos productos, especialmente en la nube, tiene varias particularidades importantes a tener en cuenta.</p>
+<section id="modelos-de-licenciamiento-y-planes">
+<h2>Modelos de Licenciamiento y Planes<a class="headerlink" href="#modelos-de-licenciamiento-y-planes" title="Link to this heading">#</a></h2>
+<p>En <strong>Atlassian Cloud</strong>, los planes más comunes son <strong>Free, Standard, Premium y Enterprise</strong>, aunque la disponibilidad de cada plan puede variar según el producto. Por ejemplo, Jira Work Management solo ofrece planes Free y Standard, mientras que Confluence Cloud Enterprise solo está disponible con un contrato anual.</p>
+<p>Los planes de Cloud se pueden facturar de forma <strong>mensual o anual</strong>.</p>
+</section>
+<section id="facturacion-mensual-vs-anual">
+<h2>Facturación Mensual vs. Anual<a class="headerlink" href="#facturacion-mensual-vs-anual" title="Link to this heading">#</a></h2>
+<p>El <strong>ciclo de facturación mensual</strong> generalmente se basa en los <strong>usuarios activos con licencias</strong> en el momento del ciclo de facturación. Históricamente, esto podía llevar a cierta confusión sobre cómo se facturaban los usuarios que se añadían o eliminaban a mitad de ciclo.</p>
+<p>A partir de <strong>octubre de 2025</strong>, Atlassian implementará un <strong>nuevo modelo de facturación mensual</strong> basado en la <strong>cantidad máxima de usuarios</strong> que hayas tenido durante el período de facturación. Esto se aplicará a suscripciones mensuales de Compass, Confluence, Atlassian Guard, Jira, Jira Product Discovery, Jira Service Management, Loom y Aplicaciones del Marketplace. Si añades usuarios a mitad de ciclo con este nuevo modelo, se calcularán <strong>cargos adicionales prorrateados</strong> en tu siguiente factura. Tu siguiente factura reflejará tanto la renovación estándar para el nuevo número de usuarios como los cargos adicionales por el uso parcial del mes anterior. Este cambio <strong>no afecta a las suscripciones anuales</strong>.</p>
+<p>El <strong>ciclo de facturación anual</strong> se paga por tramos de usuarios y por año. Un beneficio del pago anual es un posible <strong>ahorro de dos meses</strong> en comparación con la facturación mensual. Los precios contratados anualmente se mantienen fijos, incluso si Atlassian aumenta sus precios, hasta la renovación.</p>
+</section>
+<section id="metodos-de-pago-aceptados">
+<h2>Métodos de Pago Aceptados<a class="headerlink" href="#metodos-de-pago-aceptados" title="Link to this heading">#</a></h2>
+<p>Atlassian acepta una variedad de métodos de pago. Para las <strong>suscripciones mensuales a Cloud</strong>, los pagos deben realizarse exclusivamente con <strong>tarjeta de crédito o PayPal</strong>. Los pagos recurrentes se cargan al inicio de cada ciclo de facturación. No se aceptan tarjetas Discover para renovaciones mensuales.</p>
+<p>Para las <strong>suscripciones anuales a Cloud</strong> y los pedidos de <strong>Data Center</strong>, se aceptan más métodos, incluyendo <strong>tarjeta de crédito, transferencia bancaria/ACH, cheque, PayPal y términos de pago (Net 14 o Net 30)</strong>. Las renovaciones automáticas anuales solo pueden pagarse con tarjeta de crédito o PayPal.</p>
+<p>Los <strong>términos de pago a 14 días (Net-14)</strong> pueden estar disponibles para suscripciones anuales de Cloud dentro de ciertos rangos de precios (por ejemplo, entre 1000 y 50 000 USD antes de impuestos en el nuevo motor de facturación o entre 1000 y 20 000 USD en la documentación para distribuidores), sin requerir verificación de crédito.</p>
+<p>Los <strong>términos de pago a 30 días (Net-30)</strong> generalmente requieren pedidos de un importe mayor (por ejemplo, 10 000 USD o más en el sistema antiguo o 50 000 USD o más en el nuevo motor de facturación tras verificación de crédito) y pueden requerir un número de identificación fiscal.</p>
+<p>Atlassian está implementando un <strong>nuevo motor de facturación</strong> para Cloud que mejora la gestión de suscripciones y cambia cómo se procesan algunos pagos, como los términos de pago que requieren aceptar el presupuesto y recibir una factura antes de enviar el pago.</p>
+</section>
+<section id="procesos-de-compra-y-obtencion-de-presupuestos">
+<h2>Procesos de Compra y Obtención de Presupuestos<a class="headerlink" href="#procesos-de-compra-y-obtencion-de-presupuestos" title="Link to this heading">#</a></h2>
+<p>Puedes realizar compras o solicitar presupuestos directamente a través del sitio web de Atlassian o contactando a su equipo. Para obtener un presupuesto, necesitarás proporcionar detalles como tu información de contacto y la de tu cliente (si eres distribuidor), los productos deseados y los niveles de usuario.</p>
+<p>Los <strong>distribuidores no afiliados</strong> pueden comprar en nombre de terceros pero <strong>no reciben descuentos</strong> a menos que sean distribuidores corporativos o Partners oficiales de Atlassian. Los distribuidores pueden comprar suscripciones anuales a Cloud y licencias de Data Center para sus clientes, pero <strong>no pueden comprar suscripciones mensuales a Cloud</strong> para ellos. Para acceder a la clave de licencia autogestionada de un cliente, debes ser el comprador original.</p>
+</section>
+<section id="facturacion-de-atlassian-guard-y-usuarios-externos">
+<h2>Facturación de Atlassian Guard y Usuarios Externos<a class="headerlink" href="#facturacion-de-atlassian-guard-y-usuarios-externos" title="Link to this heading">#</a></h2>
+<p>Inicialmente, puede haber confusión sobre la facturación de usuarios externos por Atlassian Guard. Aunque una respuesta sugería que no se cobra por usuarios externos no gestionados, otra información indica que <strong>si activas el SSO (Inicio de Sesión Único) para usuarios externos, se te facturará por ellos</strong> según el número de usuarios externos a los que se les aplique SSO. Si la política para usuarios externos se configura como “no facturable”, solo se puede aplicar OTP (Contraseña de un solo uso). No importa si los usuarios externos son gestionados por otra organización o si tienen su propia licencia de Atlassian Guard. La otra organización no es relevante para el SSO de usuarios externos. <strong>Solo se cobra por Cuentas Gestionadas (reclamadas) y usuarios externos a los que se les aplica SSO</strong>.</p>
+<p>Es importante destacar que los clientes de Jira Service Management que solo tienen acceso de cliente (y no una licencia de Jira o Confluence) están cubiertos por Guard pero <strong>no son facturables</strong>.</p>
+<p>El SSO externo actúa como una segunda capa de autenticación. Después de iniciar sesión en su cuenta de Atlassian (que podría usar el SSO de su propia organización si está gestionada), los usuarios externos pasan por tu proveedor de identidad para autenticarse en tu sitio. No pagas por el simple hecho de que usuarios externos pasen por tu SSO.</p>
+</section>
+<section id="facturacion-de-aplicaciones-de-marketplace">
+<h2>Facturación de Aplicaciones de Marketplace<a class="headerlink" href="#facturacion-de-aplicaciones-de-marketplace" title="Link to this heading">#</a></h2>
+<p>El precio de las aplicaciones de Atlassian Marketplace se calcula en función del <strong>total mayor de usuarios</strong> en tu instancia. Por ejemplo, si tienes 32 agentes de Jira Service Management y 75 usuarios de Jira Software, las aplicaciones se facturarán para 75 usuarios. Algunas aplicaciones ofrecen planes gratuitos para instancias Cloud con menos de 10 usuarios.</p>
+</section>
+<section id="consideraciones-sobre-politicas-de-seguridad-y-facturacion">
+<h2>Consideraciones sobre Políticas de Seguridad y Facturación<a class="headerlink" href="#consideraciones-sobre-politicas-de-seguridad-y-facturacion" title="Link to this heading">#</a></h2>
+<p>Configurar políticas de seguridad y autenticación para usuarios en Atlassian Cloud, como la verificación en dos pasos, la seguridad y caducidad de contraseñas, o la duración de la sesión, requiere primero la <strong>verificación del dominio</strong>. Con Atlassian Access, puedes establecer políticas de autenticación diferentes por grupo de usuarios. Sin embargo, estas políticas se aplican a los usuarios con licencia de productos como Bitbucket, Confluence, Jira Work Management, Jira Software y Jira Service Management (solo para usuarios con cuentas de Atlassian con dominios verificados). <strong>No se pueden crear políticas de autenticación para los usuarios <em>cliente</em> de un portal de Jira Service Management</strong>; para ellos, solo hay un requisito de longitud de contraseña (entre 8 y 100 caracteres).</p>
+<p>Aunque la base de conocimientos integrada en Jira Service Management está impulsada por Confluence, los agentes de Jira Service Management <strong>no necesitan una licencia de Confluence</strong> para crear, leer, actualizar y eliminar artículos básicos en ella. Sin embargo, un administrador debe añadir manualmente un plan de Confluence al sitio para habilitar esta funcionalidad. Los usuarios que necesiten acceso directo a Confluence o funciones avanzadas sí requerirán una licencia de Confluence. Esta función integrada <strong>no está disponible en Jira Service Management Data Center</strong>.</p>
+</section>
+<section id="soporte-y-ayuda-con-la-facturacion">
+<h2>Soporte y Ayuda con la Facturación<a class="headerlink" href="#soporte-y-ayuda-con-la-facturacion" title="Link to this heading">#</a></h2>
+<p>Para preguntas específicas sobre facturación, pagos o precios, se recomienda <strong>contactar directamente con el Soporte de Atlassian</strong>. También puedes buscar ayuda en la Comunidad de Atlassian o trabajar con Partners o distribuidores oficiales de Atlassian.</p>
+<p>Comprender estos detalles te ayudará a navegar por los procesos de compra y facturación de Atlassian de manera más efectiva.</p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -483,6 +546,28 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modelos-de-licenciamiento-y-planes">Modelos de Licenciamiento y Planes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#facturacion-mensual-vs-anual">Facturación Mensual vs. Anual</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#metodos-de-pago-aceptados">Métodos de Pago Aceptados</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#procesos-de-compra-y-obtencion-de-presupuestos">Procesos de Compra y Obtención de Presupuestos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#facturacion-de-atlassian-guard-y-usuarios-externos">Facturación de Atlassian Guard y Usuarios Externos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#facturacion-de-aplicaciones-de-marketplace">Facturación de Aplicaciones de Marketplace</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#consideraciones-sobre-politicas-de-seguridad-y-facturacion">Consideraciones sobre Políticas de Seguridad y Facturación</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#soporte-y-ayuda-con-la-facturacion">Soporte y Ayuda con la Facturación</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
