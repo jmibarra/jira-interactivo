@@ -22,10 +22,12 @@ parts:
           - file: capitulos/03_opciones_despliegue_licenciamiento/data-center-vs-cloud.md
       - file: capitulos/04_procesos_compra_facturacion
       - file: capitulos/05_privacidad_gestion_datos
-  - caption: 'Parte 3: Jira: Gestión de Proyectos y Seguimiento de Incidencias'
+  - caption: 'Parte 3: Jira: Gestión de Proyectos y Seguimiento de trabajo'
     chapters:
       - file: capitulos/06_introduccion_jira
-      - file: capitulos/07_proyectos_jira
+      - file: capitulos/07_proyectos_jira/07_proyectos_jira.md
+        sections:
+          - file: capitulos/07_proyectos_jira/como-crear-un-proyecto.md
       - file: capitulos/08_issues_tipos_issue
       - file: capitulos/09_workflows
       - file: capitulos/10_paneles_campos
